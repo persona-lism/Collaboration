@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    top: 0;
+    width: 100%;
+    background: url('/main/assets/forest.jpg');
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+}
+
+* { border: 1px white solid ;}
