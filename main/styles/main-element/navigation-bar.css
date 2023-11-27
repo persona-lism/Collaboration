@@ -1,4 +1,4 @@
- .navigation {
+ /* .navigation {
     padding: 1rem 1.5rem;
     top: 0;
     left: 0;
@@ -135,4 +135,27 @@ input:checked + label:after {
     transform: translateX(-100%);
     background: white;
 } 
+ */
 
+
+ .container .navigation-bar nav {
+    padding: 1rem 1.5rem;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+ }  
+
+ .container .navigation-bar nav .logo {
+    width: 70px;
+    height: 70px;
+    background-color: #000;
+ }
+
+ .container .navigation-bar nav .light-dark-switch {
+    width: 70px;
+    height: 70px;
+    background-color: #000;
+ }
