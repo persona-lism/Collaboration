@@ -1,260 +1,123 @@
- /* {
-    padding: 1rem 1.5rem;
-    top: 0;
-    left: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    position: sticky;
-    position: -webkit-sticky;
-    justify-content: space-between;
-    color: white;
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   border: 1px black solid;
 }
 
-.navigation-heading {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+body {
+   overflow-x: hidden;
 }
 
-.navigation-heading li {
-    margin: 0;
-    padding: 1.5rem;
-    list-style-type: none;
-    font-size: 1.5rem;
-    flex: 1;
-    text-align: center;
-    cursor: pointer;
-    transition: .3s ease-in-out;
+.container {
+   position: relative;
 }
 
-.navigation-heading li:hover {
-    background-color: #111;
+.container .halaman-1 {
+   background: url(../assets/forest.jpg);
+   width: 100%;
+   height: 600px;
 }
 
-.search-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
+.container .halaman-1 .navigation-bar {
+   width: 100%;
+   display: flex;
+   justify-content: center;
 }
 
-.search-bar .search-bar-content i {
-    font-size: large;
-    font-size: 1.5rem;
-    text-align: center;
-    margin: auto;
-    color: white;
+.container .halaman-1 .navigation-bar nav {
+   padding: 16px 0;
+   display: flex;
+   justify-content: space-between;
+   color: #000;
+   width: 99%;
+}  
+
+.container .halaman-1 .navigation-bar nav .logo {
+   width: 50px;
+   height: 50px;
+   background-color: #fff;
 }
 
-.search-bar .search-bar-content input {
-    margin: 0;
-    font-size: 18px;
-    border: none;
-    background-color: transparent;
-    padding: 0.5rem;
+.container .halaman-1 .navigation-bar nav .navigation .light-dark-switch {
+   width: 50px;
+   height: 50px;
+   background-color: #fff;
 }
 
-.search-bar .search-bar-content input:focus {
-    outline: none;
+.container .halaman-1 .navigation-bar nav .navigation ul {
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   width: 300px;
 }
 
-.search-bar .search-bar-content button {
-    margin: 0;
-    font-size: 18px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
+.container .halaman-1 .navigation-bar nav .navigation ul li {
+   width: 100%;
+   color: #fff;
+   font-size: 1.1em;
+   letter-spacing: 1px;
 }
 
-.search-bar .search-bar-content {
-    border-radius: 1.2rem;
-    border: 3px white solid;
-    padding: 12px 20px;
-    display: flex;
-    flex-direction: row;
+.container .halaman-1 .navigation-bar nav .navigation {
+   display: flex;
+   justify-content: space-around;
+   width: 55%;
 }
 
-.hamburger-menu {
-    padding: 1.5rem 1rem;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.container .halaman-1 .navigation-bar nav .navigation .search-bar-content {
+   border: 2px solid white;
+   border-radius: 20px;
+   height: 30px;
+   width: 200px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 4px 0;
 }
 
-.hamburger-menu i {
-    font-size: 28px;
-    cursor: pointer;
-    text-align: center;
+.container .halaman-1 .navigation-bar nav .navigation .search-bar-content input {
+   background: transparent;
+   border: none;
+   outline: none;
+   width: 75%;
+   color: white;
 }
 
-.light-dark-switch {
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    padding: 0 1rem;
+.container .halaman-1 .navigation-bar nav .navigation .search-bar-content i {
+   color: #fff;
+   padding: 8px;
+   font-size: 0.8em;
 }
-
-.light-dark-switch input[type=checkbox] {
-    height: 0;
-    width: 0;
-    visibility: hidden;
-}
-  
-.light-dark-switch label {
-    cursor: pointer;
-    width: 80px;
-    height: 40px;
-    background: white;
-    display: block;
-    border-radius: 100px;
-    position: relative;
-    padding: 1px;
-}
-  
-label:after {
-    content: '';
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 2rem;
-    height: 2rem;
-    background: black;
-    border-radius: 45px;
-    transition: 0.3s;
-}
-  
-input:checked + label {
-    background: black;
-}
-  
-input:checked + label:after {
-    left: calc(100% - 5px);
-    transform: translateX(-100%);
-    background: white;
-} 
- */
-
- * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
-
- body {
-    overflow-x: hidden;
- }
-
- .container {
-    position: relative;
- }
-
- .container .halaman-1 {
-    background: url(../assets/forest.jpg);
-    width: 100%;
-    height: 600px;
- }
-
- .container .halaman-1 .navigation-bar {
-    width: 100%;
-    display: flex;
-    justify-content: center;
- }
-
- .container .halaman-1 .navigation-bar nav {
-    padding: 16px 0;
-    display: flex;
-    justify-content: space-between;
-    color: #000;
-    width: 99%;
- }  
-
- .container .halaman-1 .navigation-bar nav .logo {
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
- }
-
- .container .halaman-1 .navigation-bar nav .navigation .light-dark-switch {
-    width: 50px;
-    height: 50px;
-    background-color: #fff;
- }
-
- .container .halaman-1 .navigation-bar nav .navigation ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
- }
-
- .container .halaman-1 .navigation-bar nav .navigation ul li {
-    width: 100%;
-    color: #fff;
-    font-size: 1.1em;
-    letter-spacing: 1px;
- }
-
- .container .halaman-1 .navigation-bar nav .navigation {
-    display: flex;
-    justify-content: space-around;
-    width: 55%;
- }
-
- .container .halaman-1 .navigation-bar nav .navigation .search-bar-content {
-    border: 2px solid white;
-    border-radius: 20px;
-    height: 30px;
-    width: 200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 0;
- }
-
- .container .halaman-1 .navigation-bar nav .navigation .search-bar-content input {
-    background: transparent;
-    border: none;
-    outline: none;
-    width: 75%;
-    color: white;
- }
-
- .container .halaman-1 .navigation-bar nav .navigation .search-bar-content i {
-    color: #fff;
-    padding: 8px;
-    font-size: 0.8em;
- }
 
 /* Hamburger menu */
 .container .halaman-1 .navigation-bar nav .navigation .hamburger-menu {
-    display: none;
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-    position: relative;
-    z-index: 3;
+   display: none;
+   flex-direction: column;
+   height: 20px;
+   justify-content: space-between;
+   position: relative;
+   z-index: 3;
 }
 
 .container .halaman-1 .navigation-bar nav .navigation .hamburger-menu input {
-    position: absolute;
-    width: 43px;
-    height: 32px;
-    opacity: 0;
-    left: -6px;
-    top: -4px;
-    cursor: pointer;
+   position: absolute;
+   width: 43px;
+   height: 32px;
+   opacity: 0;
+   left: -6px;
+   top: -4px;
+   cursor: pointer;
 }
 
 .container .halaman-1 .navigation-bar nav .navigation .hamburger-menu span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color:rgb(248, 242, 242);
-    border-radius: 3px;
-    transition: all 0.5s;
+   display: block;
+   width: 28px;
+   height: 3px;
+   background-color:rgb(248, 242, 242);
+   border-radius: 3px;
+   transition: all 0.5s;
 }
 
 /* Hamburger animation */
@@ -329,14 +192,14 @@ input:checked + label:after {
  .container .content .gambar .konten-gambar .gambar-1 , .gambar-2 {
     width: 420px;
     height: 270px;
-    border-radius: 10%;
+    border-radius: 0% 10% 0% 10% / 25% 25% 25% 25%;
     background-color: blue;
  }
 
  .container .content .gambar .konten-gambar .gambar-3 {
     width: 220px;
     height: 270px;
-    border-radius: 10%;
+    border-radius: 0% 25% 0% 25% / 25% 25% 25% 25%;
     background-color: red;
  }
 
@@ -345,7 +208,7 @@ input:checked + label:after {
  .container .content .gambar .konten-gambar-s .gambar-4 {
     width: 270px;
     height: 370px;
-    border-radius: 10%;
+    border-radius: 0% 25% 0% 25% / 25% 25% 25% 25%;
     background-color: red;
  }
 
@@ -360,13 +223,13 @@ input:checked + label:after {
  .container .content .gambar .konten-gambar-s .gambar-5 .gambar-ke-1 , .gambar-ke-2 {
     width: 270px;
     height: 175px;
-    border-radius: 10%;
+    border-radius: 0% 10% 0% 10% / 25% 25% 25% 25%;
     background-color: red;
  }
 
  .container .content .gambar .konten-gambar-s .gambar-6 {
     width: 520px;
     height: 370px;
-    border-radius: 10%;
+    border-radius: 0% 25% 0% 25% / 25% 25% 25% 25%;
     background-color: red;
  }
