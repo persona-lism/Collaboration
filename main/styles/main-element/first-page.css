@@ -1,0 +1,86 @@
+.explore-indonesia-content > .explore-indonesia-title {
+    color: white;
+    text-align: end;
+    margin-right: 80px;
+    margin-top: 150px;
+}
+
+.explore-indonesia-content > .explore-indonesia-title > #explore {
+    font-size: 5.5em;
+}
+
+.explore-indonesia-content > .explore-indonesia-title > #indonesia {
+    font-size: 6.3em;
+    letter-spacing: 10px;
+}
+
+.container > .second-content > .second-content-image {
+    width: 97%;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.second-content-image-top {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: [k1] 420px [k2] 420px [k3] 220px [k4];
+    gap: 20px;
+    margin: 20px auto;
+    width: 97%;
+}
+
+.second-content-image-bottom {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: [k1] 270px [k2] 270px [k3] 520px [k4];
+    gap: 30px;
+    margin:0 auto;
+    width: 97%;
+}
+
+ /* gambar 1-3 */
+
+.second-content-image-top > .image-content-top-1 , .image-content-top-2 {
+    width: 420px;
+    height: 270px;
+    border-radius: 0% 10% 0% 10% / 25% 25% 25% 25%;
+    background-color: blue;
+}
+
+.second-content-image-top > .image-content-top-3 {
+    width: 220px;
+    height: 270px;
+    border-radius: 0% 25% 0% 25% / 25% 25% 25% 25%;
+    background-color: red;
+}
+
+ /* gambar 4-6 */
+
+.second-content-image-bottom > .image-content-top-4 {
+    width: 270px;
+    height: 370px;
+    border-radius: 0% 25% 0% 25% / 25% 25% 25% 25%;
+    background-color: red;
+}
+
+.second-content-image-bottom > .image-content-top-5 {
+    width: 270px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.second-content-image-bottom > .image-content-top-5 > .image-content-top-5-child-1 , .image-content-top-5-child-2 {
+    width: 270px;
+    height: 175px;
+    border-radius: 0% 10% 0% 10% / 25% 25% 25% 25%;
+    background-color: red;
+}
+
+.second-content-image-bottom > .image-content-top-6 {
+    width: 520px;
+    height: 370px;
+    border-radius: 0% 25% 0% 25% / 25% 25% 25% 25%;
+    background-color: red;
+}
