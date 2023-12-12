@@ -7,11 +7,13 @@
 
 .explore-indonesia-content > .explore-indonesia-title > #explore {
     font-size: 5.5em;
+    text-shadow: -2.5px 2.5px 5px black;
 }
 
 .explore-indonesia-content > .explore-indonesia-title > #indonesia {
     font-size: 6.3em;
-    letter-spacing: 10px;
+    letter-spacing: 2vw;
+    text-shadow: 2.5px 2.5px 5px black;
 }
 
 .container > .second-content > .second-content-image {
