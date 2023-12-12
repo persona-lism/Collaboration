@@ -5,6 +5,11 @@
    /* border: 1px black solid; */
 }
 
+@font-face {
+   font-family: Blanka;
+   src:url('../assets/Blanka.otf')
+}
+
 body {
    overflow-x: hidden;
    background-color: #000;
