@@ -10,6 +10,10 @@
    src:url('../assets/Blanka.otf')
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    overflow-x: hidden;
    background-color: #000;
@@ -48,7 +52,7 @@ body {
    display: flex;
    align-items: center;
    justify-content: center;
-   margin-left: 2rem;
+   margin-left: 2rem;   
 }
 
 .navigation-bar nav > .logo > img {
@@ -57,7 +61,11 @@ body {
    margin: 0;
    background-size: cover;
    object-fit: cover;
-   transform: scale(1.4);
+   transform: scale(1.8);
+   mix-blend-mode: multiply;
+   object-fit: cover;
+   background-size: cover;
+   background-position: center;
 }
 
 .navigation > .light-dark-switch {
@@ -72,6 +80,7 @@ body {
    justify-content: space-between;
    text-align: center;
    align-items: center;
+   gap: 1.5rem;
 }
 
 .navigation-bar nav > .navigation ul li {
@@ -80,8 +89,23 @@ body {
    letter-spacing: 1px;
    padding: 18px;
    cursor: pointer;
-   font-size: 1.5rem;
+   font-size: 1.8rem;
    text-shadow: 1.5px 1.5px 2px black;
+   font-family: serif;
+   font-weight: bold;
+}
+
+.navigation-bar nav > .navigation ul li::after {
+   display: block;
+   content: '';
+   /* border-bottom: solid 4px #019fb6;  */
+   border-bottom: solid 4px lightcoral;
+   transform: scaleX(0);  
+   transition: transform 300ms ease-in-out;
+}
+
+.navigation-bar nav > .navigation ul li:hover::after {
+   transform: scaleX(1);
 }
 
 .navigation-bar nav > .navigation {
@@ -101,6 +125,7 @@ body {
    margin: auto 0;
    width: 40%;
    max-width: 320px;
+   box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.4);
 }
 
 .navigation > .search-bar-content input {
