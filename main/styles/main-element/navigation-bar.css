@@ -2,29 +2,33 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
+   /* border: 1px black solid; */
 }
 
 body {
    overflow-x: hidden;
+   background-color: #000;
 }
 
 .container {
    position: relative;
 }
 
-.container .main-content {
-   background: url(../assets/main-background.jpg);
+.container > .main-content {
+   background: url(../assets/main-background.jpg), linear-gradient(to bottom, transparent 55%, #000);
    width: 100%;
+   background-size: cover;
    height: 600px;
+   background-blend-mode: overlay;
 }
 
-.container .main-content .navigation-bar {
+.main-content > .navigation-bar {
    width: 100%;
    display: flex;
    justify-content: center;
 }
 
-.container .main-content .navigation-bar nav {
+.main-content > .navigation-bar nav {
    padding: 16px 0;
    display: flex;
    justify-content: space-between;
@@ -32,7 +36,7 @@ body {
    width: 99%;
 }
 
-.container .main-content .navigation-bar nav .logo {
+.navigation-bar nav > .logo {
    width: auto;
    height: auto;
    display: flex;
@@ -41,7 +45,7 @@ body {
    margin-left: 2rem;
 }
 
-.container .main-content .navigation-bar nav .logo img {
+.navigation-bar nav > .logo > img {
    width: 52px;
    height: 52px;
    margin: 0;
@@ -50,13 +54,13 @@ body {
    transform: scale(1.4);
 }
 
-.container .main-content .navigation-bar nav .navigation {
-   display: flex;
-   justify-content: space-around;
-   width: 60%;
+.navigation > .light-dark-switch {
+   width: 50px;
+   height: 50px;
+   background-color: #fff;
 }
 
-.container .main-content .navigation-bar nav .navigation ul {
+.navigation-bar nav > .navigation ul {
    list-style: none;
    display: flex;
    justify-content: space-between;
@@ -64,7 +68,7 @@ body {
    align-items: center;
 }
 
-.container .main-content .navigation-bar nav .navigation ul li {
+.navigation-bar nav > .navigation ul li {
    width: 100%;
    color: #fff;
    letter-spacing: 1px;
@@ -74,37 +78,47 @@ body {
    text-shadow: 1.5px 1.5px 2px black;
 }
 
-/* Search bar */
+.navigation-bar nav > .navigation {
+   display: flex;
+   justify-content: space-around;
+   width: 55%;
+}
 
-.container .main-content .navigation-bar nav .navigation .search-bar-content {
+.navigation > .search-bar-content {
    border: 2.5px solid white;
    border-radius: 24px;
-   height: 37px;
+   height: 48px;
    display: flex;
-   width: 35%;
    justify-content: space-between;
    align-items: center;
-   padding: 8px;
+   padding: 1rem 8px;
    margin: auto 0;
 }
 
-.container .main-content .navigation-bar nav .navigation .search-bar-content input {
+.navigation > .search-bar-content input {
    background: transparent;
    border: none;
    outline: none;
-   width: 65%;
+   width: 75%;
    color: white;
-   font-size: 1rem;
+   font-size: 1.2rem;
+   margin: 0 12px;
+   font-weight: bold;
+   text-shadow: 1px 1px 1px rgba(9, 0, 0, 0.5);
 }
 
-.container .main-content .navigation-bar nav .navigation .search-bar-content i {
+.navigation > .search-bar-content input::placeholder {
    color: #fff;
-   font-size: 1.2rem;
+}
+
+.navigation > .search-bar-content i {
+   color: #fff;
+   font-size: 1.5rem;
    padding: 4px;
 }
 
 /* Hamburger menu */
-.container .main-content .navigation-bar nav .navigation .hamburger-menu {
+.navigation > .hamburger-menu {
    display: none;
    flex-direction: column;
    height: 20px;
@@ -113,7 +127,7 @@ body {
    z-index: 3;
 }
 
-.container .main-content .navigation-bar nav .navigation .hamburger-menu input {
+.navigation > .hamburger-menu input {
    position: absolute;
    width: 43px;
    height: 32px;
@@ -123,7 +137,7 @@ body {
    cursor: pointer;
 }
 
-.container .main-content .navigation-bar nav .navigation .hamburger-menu span {
+.navigation > .hamburger-menu span {
    display: block;
    width: 28px;
    height: 3px;
@@ -134,80 +148,25 @@ body {
 
 /* Hamburger animation */
 
-.container .main-content .navigation-bar nav .navigation .hamburger-menu span:nth-child(2) {
+.navigation > .hamburger-menu span:nth-child(2) {
     transform-origin: 0 0;
 }
 
-.container .main-content .navigation-bar nav .navigation .hamburger-menu span:nth-child(4) {
+.navigation > .hamburger-menu span:nth-child(4) {
     transform-origin: 0 100%;
 }
 
-.container .main-content .navigation-bar nav .navigation .hamburger-menu input:checked ~ span:nth-child(2) {
+.navigation > .hamburger-menu input:checked ~ span:nth-child(2) {
     background-color: rgb(248, 242, 242);
     transform: rotate(45deg) translate(-1px,-1px);
 }
 
-.container .main-content .navigation-bar nav .navigation .hamburger-menu input:checked ~ span:nth-child(3) {
+.navigation > .hamburger-menu input:checked ~ span:nth-child(3) {
     opacity: 0;
     transform: scale(0);
 }
 
-.container .main-content .navigation-bar nav .navigation .hamburger-menu input:checked ~ span:nth-child(4) {
+.navigation > .hamburger-menu input:checked ~ span:nth-child(4) {
     background-color: rgb(248, 242, 242);
     transform: rotate(-45deg) translate(-1px,0);
-}
-
-
-/* Dark Light Toogle */
-
-.container .main-content .navigation-bar nav .navigation .light-dark-switch {
-   display: flex;
-   justify-content: space-between;
-   height: 37px;
-   width: 100px;
-   background-color: #000;
-   border-radius: 24px;
-   color: #fff;
-   position: relative;
-   align-items: center;
-   padding: 3px;
-   margin: auto 0;
-   cursor: pointer;
-   transition:all 1s ease;
-}
-
-.container .main-content .navigation-bar nav .navigation .light-dark-switch .circle {
-   border-radius: 48%;
-   height: 34px;
-   width: 34px;
-   background-color: #fff;
-   position: relative;
-   cursor: pointer;
-   outline: none;
-   transition:all 1s ease;
-}
-
-.container .main-content .navigation-bar nav .navigation .light-dark-switch .circle i {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%,-50%);
-   color: #000;
-   font-size: 1.3em;
-}
-
-.container .main-content .navigation-bar nav .navigation .light-dark-switch span {
-   position: absolute;
-   transform: translate(-50%,-50%);
-   top: 50%;
-   left: 65%;
-   font-weight: bold;
-   font-size: 0.9em;
-   letter-spacing: 1px;
-}
-
-/* Dark Light Toogle Animation */
-.container .main-content .navigation-bar nav .navigation .light-dark-switch.active .circle {
-   margin-left: 59px;
-   transform: rotate(360deg);
 }
