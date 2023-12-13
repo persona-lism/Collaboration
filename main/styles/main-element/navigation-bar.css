@@ -1,6 +1,7 @@
 * {
    box-sizing: border-box;
-   /* border: 1px white solid; */
+   margin: 0;
+   padding: 0;
 }
 
 @font-face {
@@ -24,7 +25,7 @@ body {
 }
 
 .container > .main-content {
-   background: url(../assets/main-background.jpg), linear-gradient(to bottom, transparent 55%, #000);
+   background: url(../assets/main-background.jpg), linear-gradient(to bottom, transparent 55%, #000) ;
    background-size: cover;
    width: 100%;
    height: 720px;
@@ -39,7 +40,7 @@ body {
 }
 
 .main-content > .navigation-bar nav {
-   padding: 16px 0;
+   padding: 8px 0;
    display: flex;
    justify-content: space-between;
    color: #000;
@@ -68,11 +69,13 @@ body {
    background-position: center;
 }
 
-.navigation > .light-dark-switch {
-   width: 50px;
-   height: 50px;
-   background-color: #fff;
-}
+.navigation-bar nav > .navigation {
+   display: flex;
+   justify-content: space-evenly;
+   width: 60%;
+   margin-right: 10px;
+   /* background-color: red; */
+} 
 
 .navigation-bar nav > .navigation ul {
    list-style: none;
@@ -108,13 +111,6 @@ body {
    transform: scaleX(1);
 }
 
-.navigation-bar nav > .navigation {
-   display: flex;
-   justify-content: space-evenly;
-   width: 55%;
-   margin-right: 70px;
-}
-
 .navigation > .search-bar-content {
    border: 2.5px solid white;
    border-radius: 24px;
@@ -147,7 +143,7 @@ body {
 .navigation > .search-bar-content i {
    color: #fff;
    font-size: 1.2rem;
-   padding: 8px;
+   padding: 12px;
 }
 
 /* Hamburger menu */
