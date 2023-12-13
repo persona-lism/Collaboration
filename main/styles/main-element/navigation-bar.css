@@ -1,8 +1,6 @@
 * {
-   margin: 0;
-   padding: 0;
    box-sizing: border-box;
-   /* border: 1px black solid; */
+   /* border: 1px white solid; */
 }
 
 @font-face {
@@ -17,6 +15,8 @@ html {
 body {
    overflow-x: hidden;
    background-color: #000;
+   margin: 0;
+   padding: 0;
 }
 
 .container {
