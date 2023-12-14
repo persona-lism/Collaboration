@@ -36,7 +36,62 @@
 //     Imglist[slideIndex].style.display = "flex"
 // }
 
+// var slider = new Swiper('.third-content-image-slider', {
+//     slidesPerView: 1,
+//     centeredSlides: true,
+//     loop: true,
+//     loopedSlides: 1,
+//     navigation: {
+//         nextEl: '.right-slider',
+//         prevEl: '.left-slider',
+//     },
+// });
 
+// document.querySelector('.right-slider').addEventListener('click', function () {
+//     slider.slideNext();
+// });
+
+// document.querySelector('.left-slider').addEventListener('click', function () {
+//     slider.slidePrev();
+// });
+
+
+var slider = new Swiper('.third-content-image-slider', {
+    slidesPerView: 1,
+    centeredSlides: true,
+    loop: true,
+    loopedSlides: 3, 
+    navigation: {
+        nextEl: '.left-slider',
+        prevEl: '.right-slider',
+    },
+});
+
+document.querySelector('.left-slider').addEventListener('click', function () {
+    slideNextOrRestart();
+});
+
+document.querySelector('.right-slider').addEventListener('click', function () {
+    slidePrevOrRestart();
+});
+
+function slideNextOrRestart() {
+    var currentIndex = slider.activeIndex;
+    if (currentIndex < slider.slides.length - 1) {
+        slider.slideNext();
+    } else {
+        slider.slideTo(0);
+    }
+}
+
+function slidePrevOrRestart() {
+    var currentIndex = slider.activeIndex;
+    if (currentIndex > 0) {
+        slider.slidePrev();
+    } else {
+        slider.slideTo(slider.slides.length - 1);
+    }
+}
 
 
 

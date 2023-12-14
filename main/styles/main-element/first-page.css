@@ -33,6 +33,7 @@
 
 .container > .second-content {
     padding-bottom: 26rem;
+    background:linear-gradient(to bottom, transparent 55%, #000);
 }
 
 .container > .second-content > .second-content-image {
@@ -208,22 +209,23 @@
     position: relative;
 }
 
-.third-content-wrapper {
+.third-content-wrappers {
     position: relative;
     padding: 18rem 2rem;
     display: flex;
 }
 
-.third-content-wrapper > .third-content-text {
+.third-content-wrappers > .third-content-texts {
     display: block;
     width: 100%;
     max-width: 640px;
-    /* border: 1px black solid; */
     padding: 1rem 2rem;
     margin-inline: 2rem;
+    height: 300px;
+    position: relative;
 }
 
-.third-content-wrapper > .third-content-text > h1 {
+.third-content-wrappers > .third-content-texts > h1 {
     display: flex;
     flex-direction: column;
     margin: 8px 0;
@@ -231,28 +233,27 @@
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
-.third-content-wrapper > .third-content-text > h1 > span:nth-child(1) {
+.third-content-wrappers > .third-content-texts > h1 > span{
     color: #FFD700;
+    margin: 10px 0 5px 0;
+    padding: 0;
 }
 
-.third-content-wrapper > .third-content-text > h1 > span:nth-child(2) {
-    color: #FFD700;
-}
-
-.third-content-wrapper > .third-content-text > p {
+.third-content-wrappers > .third-content-texts > p {
     font-size: 1.2rem;
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+    margin-top: 2rem;
 }
 
-.third-content-text > .third-content-explore-more {
+.third-content-texts > .third-content-explore-mores {
     margin: 1.5rem 0;
     display: inline-block;
     position: relative;
     transition: all 0.4s;
 }
 
-.third-content-explore-more > a {
+.third-content-explore-mores > a {
     text-decoration-line: none;
     background-color: #2a8694;
     padding: 1rem 2rem;
@@ -266,12 +267,12 @@
     font-weight: bold;
 }
 
-.third-content-explore-more > a:hover {
+.third-content-explore-mores > a:hover {
     background-color: #1a7684;
     box-shadow: 1px 1.5px 1.5px rgba(0, 0, 0, 0.6);
 }
 
-.third-content-explore-more > a::after {
+.third-content-explore-mores > a::after {
     content: '>';
     position: absolute;
     right: 0.1rem;
@@ -279,11 +280,11 @@
     transition: 0.4s;
 }
 
-.third-content-explore-more:hover > a::after {
+.third-content-explore-mores:hover > a::after {
     opacity: 1;
     right: 0.8rem;
 }
-.third-content-explore-more:hover > a {
+.third-content-explore-mores:hover > a {
     padding-right: -2rem;
 }
 /*  */
@@ -295,15 +296,32 @@
     transform: scale(0.8);
 }
 
-.third-content-image-slider {
+/* Third Image Slider */
+
+.third-gallery {
+    position: relative;
+    right: -6rem;
     display: flex;
     flex: 1;
-    gap: 2rem;
-    position: relative;
-    right: -5rem;
+    width: 700px;
 }
 
-.third-content-image-slider > div {
+.third-gallery .third-content-image-slider {
+    width: 700px;
+    position: relative;
+    overflow-x: hidden;
+    height: 400px;
+    margin-top: -3rem;
+}
+
+.third-gallery .third-content-image-slider .image-slider-third {
+    display: flex;
+    gap: 2rem;
+    margin-left: 700px;
+    margin-top: 40px;
+}
+
+.third-gallery .third-content-image-slider .image-slider-third > div {
     padding: 2rem;
     height: 300px;
     width: 200px;
@@ -314,31 +332,32 @@
     cursor: pointer;
 }
 
-.third-content-image-slider > div:nth-child(1) {
+.third-gallery .third-content-image-slider .image-slider-third > div:nth-child(1)  {
     top: 0;
-    background: url(../assets/image-slider-first.jpg);
+    background: url(../assets/image-slider-third.jpg);
     background-position: left;
     background-size: cover;
     animation: floating-1 5s infinite;
 }
 
-.third-content-image-slider > div:nth-child(2) {
+.third-gallery .third-content-image-slider .image-slider-third > div:nth-child(2)  {
     top: -5rem;
-    background: url(../assets/image-slider-second.jpg);
+    background: url(../assets/image-slider-first.jpg);
     background-position: left;
     background-size: cover;
     animation: floating-2 5.5s infinite;
 }
 
-.third-content-image-slider > div:nth-child(3) {
+.third-gallery .third-content-image-slider .image-slider-third > div:nth-child(3)  {
     top: 0;
-    background: url(../assets/image-slider-third.jpg);
+    background: url(../assets/image-slider-second.jpg);
     background-position: left;
     background-size: cover;
     animation: floating-3 5.75s infinite;
 }
 
-.third-content-image-slider > div > span {
+
+.third-gallery .third-content-image-slider .image-slider-third > div > span {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -395,7 +414,7 @@
 }
 
 
-/* Button Slider */
+/* Button Slider */ 
 .button-slider {
     display: flex;
     justify-content: space-between;
@@ -403,7 +422,7 @@
     position: absolute;
     z-index: 1;
     top: 42%;
-    left: 49.5%;
+    right: 10%;
 }
 
 .button-slider > button {
@@ -438,7 +457,7 @@
 
 .fourth-content .fourth-content-slider {
     color:#fff;
-    height: 700px;
+    height: 800px;
     width: 100%;
     z-index: 0;
     position: absolute;
@@ -446,10 +465,10 @@
 
 .fourth-content .fourth-content-slider > .fourth-image img:nth-child(1) {
     width: 100%;
-    height: 1000px;
+    height: 1100px;
     position: absolute;
     z-index: -3;
-    top: -12rem;
+    top: -10rem;
 }
 
 .fourth-content .fourth-content-slider > .fourth-image img:nth-child(2) {
@@ -462,17 +481,17 @@
 }
 
 .fourth-content .forth-container-content {
-    background-color: yellow;
     width: 92%;
     display: flex;
     gap: 3rem;
-    margin:0 auto;
+    margin:13rem auto;
 }
 
 .fourth-content .forth-container-content .fourth-image-content {
     height: 400px;
     width: 400px;
-    background-color: red;
+    background-color: #ddd;
+    color: #000;
 }
 
 .fourth-content  .forth-container-content .fourth-image-content img {
@@ -482,6 +501,7 @@
 
 .fourth-content  .forth-container-content .fourth-image-content p , span {
     padding: 0 1rem;
+    margin-top: 100px;
 }
 
 .fourth-content  .forth-container-content .fourth-image-content > p:nth-child(2) {
@@ -491,18 +511,31 @@
 }
 
 .fourth-content  .forth-container-content .fourth-image-content > p:nth-child(4) {
-    margin-top: 30px;
+    margin-top: 50px;
     letter-spacing: 1px;
 }
 
+.fourth-content .fourth-content-slider .button-forth-content {
+    width: 97%;
+    display: flex;
+    justify-content: space-between;
+    top: 50%;
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 .fourth-content .fourth-content-slider .button-forth-content > button {
-    height: 50px;
-    width: 50px;
+    height: 70px;
+    width: 70px;
     background: #FFD700;
     border-radius: 50%;
     border: 2px solid #FFD700;
 }
 
 .fourth-content .fourth-content-slider .button-forth-content > button i {
-    font-size: 1.8em;
+    font-size: 3.5em;
+    color: #fff;
 }
+
