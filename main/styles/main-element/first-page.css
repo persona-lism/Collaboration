@@ -421,7 +421,8 @@
     width: 630px;
     position: absolute;
     z-index: 1;
-    top: 42%;
+    transform: translateY(-50%);
+    top: 50%;
     right: 10%;
 }
 
@@ -484,18 +485,19 @@
     width: 92%;
     display: flex;
     gap: 3rem;
-    margin:13rem auto;
+    justify-content: space-between;
+    margin: 13rem auto;
 }
 
 .fourth-content .forth-container-content .fourth-image-content {
-    height: 400px;
+    height: 500px;
     width: 400px;
     background-color: #ddd;
     color: #000;
 }
 
 .fourth-content  .forth-container-content .fourth-image-content img {
-    height: 200px;
+    height: 320px;
     width: 100%;
 }
 
@@ -511,7 +513,7 @@
 }
 
 .fourth-content  .forth-container-content .fourth-image-content > p:nth-child(4) {
-    margin-top: 50px;
+    margin-top: 24px;
     letter-spacing: 1px;
 }
 
