@@ -1,3 +1,8 @@
-body {
-    background-color:red;
+.container-explore .main-content {
+    background-color: aqua;
+    height: 720px;
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
 }
+
