@@ -1,1 +1,13 @@
 /* Large devices (laptops/desktops, 992px and up) */
+
+/* FIRST CONTENT - Explore Indonesia Content */
+.explore-indonesia-content > .explore-indonesia-title > #explore {
+    font-size: 4.3em;
+    letter-spacing: 0.8rem;
+}
+
+.explore-indonesia-content > .explore-indonesia-title > #indonesia {
+    font-size: 5.4em;
+    letter-spacing: 1.8rem;
+    margin-right: -1.8rem;
+}

@@ -1,5 +1,9 @@
 /* Extra small devices (phones, 600px and down) */
 
+/* NAVIGATION BAR */
+.navigation li {
+    display: none;
+}
 
 /* FIRST CONTENT - Explore Indonesia Content */
 .explore-indonesia-content > .explore-indonesia-title > #explore {

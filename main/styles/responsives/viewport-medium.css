@@ -1,1 +1,13 @@
 /* Medium devices (landscape tablets, 768px and up) */
+
+/* FIRST CONTENT - Explore Indonesia Content */
+.explore-indonesia-content > .explore-indonesia-title > #explore {
+    font-size: 3.6em;
+    letter-spacing: 0.6rem;
+}
+
+.explore-indonesia-content > .explore-indonesia-title > #indonesia {
+    font-size: 4.5em;
+    letter-spacing: 1.2rem;
+    margin-right: -1.2rem;
+}
