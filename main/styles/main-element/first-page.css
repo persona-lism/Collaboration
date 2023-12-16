@@ -33,7 +33,7 @@
 
 .container > .second-content {
     padding-bottom: 26rem;
-    background:linear-gradient(to bottom, transparent 55%, #000);
+    background: linear-gradient(to bottom, transparent 55%, #000);
 }
 
 .container > .second-content > .second-content-image {
