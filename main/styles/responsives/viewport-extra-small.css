@@ -1,0 +1,51 @@
+/* Extra small devices (phones, 600px and down) */
+
+
+/* FIRST CONTENT - Explore Indonesia Content */
+.explore-indonesia-content > .explore-indonesia-title > #explore {
+    font-size: 1.75em;
+    letter-spacing: 0.3rem;
+}
+
+.explore-indonesia-content > .explore-indonesia-title > #indonesia {
+    font-size: 2.65em;
+    letter-spacing: 0.9rem;
+    margin-right: -0.9rem;
+}
+
+/* FIRST PAGE - Second Content */
+
+.image-content-top-1 {
+    width: 150px;
+    height: 75px;
+}
+
+.image-content-top-2 {
+    width: 150px;
+    height: 75px;
+}
+
+.image-content-top-3 {
+    width: 50px;
+    height: 75px;
+}
+
+.image-content-top-4 {
+    width: 75px;
+    height: 125px;
+}
+
+.image-content-top-5 {
+    width: 75px;
+    height: 57.5px;
+}
+
+.image-content-top-6 {
+    width: 75px;
+    height: 57.5px;
+}
+
+.image-content-top-7 {
+    width: 200px;
+    height: 125px;
+}
