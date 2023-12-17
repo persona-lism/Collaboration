@@ -2,7 +2,7 @@
    box-sizing: border-box;
    margin: 0;
    padding: 0;
-   /* border: 1px black solid; */
+   /* border: 1px white solid; */
 }
 
 @font-face {
@@ -10,15 +10,12 @@
    src: url('../assets/Blanka.otf');
 }
 
-html {
-   scroll-behavior: smooth;
-}
-
 body {
    overflow-x: hidden;
    background-color: #000;
    margin: 0;
    padding: 0;
+   scroll-behavior: smooth;
 }
 
 .container {
@@ -60,7 +57,7 @@ body {
 .navigation-bar nav > .logo > img {
    width: 52px;
    height: 52px;
-   margin: 0;
+   margin: auto;
    background-size: cover;
    object-fit: cover;
    transform: scale(1.8);

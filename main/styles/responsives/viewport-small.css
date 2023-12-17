@@ -5,6 +5,14 @@
     display: none;
 }
 
+.navigation-bar nav > .navigation ul {
+    gap: 1rem;
+}
+
+.navigation-bar nav > .logo > img {
+    transform: scale(1.2);
+}
+
 /* FIRST CONTENT - Explore Indonesia Content */
 .explore-indonesia-content > .explore-indonesia-title > #explore {
     font-size: 2.25em;
@@ -15,4 +23,30 @@
     font-size: 3.15em;
     letter-spacing: 0.9rem;
     margin-right: -0.9rem;
+}
+
+/* SECOND CONTENT - Container */
+.second-content-container {
+    padding: 8px 16px;
+    width: 380px;
+    height: 260px;
+}
+
+.second-content-container > h3 {
+    font-size: 1rem;
+}
+
+.second-content-container > .multicultural > h1 {
+    margin: 6px 0;
+    font-size: 1.7rem;
+}
+
+.second-content-container > .country > h1 {
+    margin: 4px 0;
+    font-size: 1.7rem;
+}
+
+.second-content-container > p {
+    margin: 6px 0;
+    font-size: 0.9rem;
 }

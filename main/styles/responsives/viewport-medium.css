@@ -1,5 +1,24 @@
 /* Medium devices (landscape tablets, 768px and up) */
 
+/* NAVIGATION BAR */
+.navigation-bar nav > .navigation {
+    gap: 1rem;
+    margin: 0.5rem;
+}
+
+.navigation-bar nav > .navigation ul {
+    gap: 1rem;
+}
+
+.navigation-bar nav > .navigation ul li {
+    font-size: 1.5rem;
+    padding: 12px;
+}
+
+.navigation-bar nav > .logo > img {
+    transform: scale(1.5);
+}
+
 /* FIRST CONTENT - Explore Indonesia Content */
 .explore-indonesia-content > .explore-indonesia-title > #explore {
     font-size: 3.6em;
@@ -10,4 +29,26 @@
     font-size: 4.5em;
     letter-spacing: 1.2rem;
     margin-right: -1.2rem;
+}
+
+/* SECOND CONTENT - Container */
+.second-content-container {
+    padding: 8px 16px;
+    width: 430px;
+    height: 310px;
+}
+
+.second-content-container > .multicultural > h1 {
+    margin: 6px 0;
+    font-size: 2rem;
+}
+
+.second-content-container > .country > h1 {
+    margin: 4px 0;
+    font-size: 2rem;
+}
+
+.second-content-container > p {
+    margin: 6px 0;
+    font-size: 1rem;
 }
