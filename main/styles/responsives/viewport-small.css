@@ -50,3 +50,8 @@
     margin: 6px 0;
     font-size: 0.9rem;
 }
+
+/* THIRD CONTENT - Explore */
+.third-content-wrappers {
+    flex-direction: column;
+}
