@@ -2,7 +2,7 @@
    box-sizing: border-box;
    margin: 0;
    padding: 0;
-   border: 1px red solid;
+   /* border: 1px red solid; */
 }
 
 @font-face {
@@ -10,8 +10,13 @@
    src: url('../assets/Blanka.otf');
 }
 
+html {
+   overflow-x: hidden;
+}
+
 body {
    overflow-x: hidden;
+   overflow-y: hidden;
    background-color: #000;
    margin: 0;
    padding: 0;

@@ -27,7 +27,7 @@
 
 /* SECOND CONTENT - Container */
 .second-content-top-grid, .second-content-bottom-grid {
-    padding: 0 1rem;
+    padding: 0 0.5rem;
     margin: 0.5rem auto;
     width: 100%;
     gap: 1rem;
@@ -36,7 +36,7 @@
 .second-content-container {
     padding: 8px 16px;
     width: 330px;
-    height: 210px;
+    height: 240px;
 }
 
 .second-content-container > h3 {

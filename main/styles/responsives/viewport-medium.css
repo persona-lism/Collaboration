@@ -32,6 +32,13 @@
 }
 
 /* SECOND CONTENT - Container */
+.second-content-top-grid, .second-content-bottom-grid {
+    padding: 0 1rem;
+    margin: 1rem auto;
+    width: 80%;
+    gap: 1.5rem;
+}
+
 .second-content-container {
     padding: 8px 16px;
     width: 430px;
