@@ -1,8 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: ; */
+}
+
 .container-explore .main-content {
-    background-color: aqua;
+    background-image: linear-gradient(to left top , #1a5a91 60% , #101746 95%);
     height: 720px;
-    width: 100%;
-    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+.container-explore .main-content .first-content-explore {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container-explore .main-content .first-content-explore .circle {
+    height: 1000px;
+    width: 1000px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    top: -40rem;
+    left: -28rem;
+    border: 50px solid white;
+    opacity: 0.8;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-top {
+    display: flex;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-top .first-photo-explore {
+    margin-top: -6rem;
+    margin-left: 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-top .first-photo-explore img {
+    height: 500px;
+    width: 520px;
+    border-radius: 10px;
+    overflow: hidden;
     object-fit: cover;
 }
 
+.container-explore .main-content .first-content-explore .first-explore-content-top .first-title-explore {
+    height: 300px;
+    width: 50%;
+    margin-left: -3rem;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-top .first-title-explore h1 {
+    font-size: 7em;
+    color: #ffd700;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-top .first-title-explore a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-top .first-title-explore a > span {
+    margin-right: 7px;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-top .first-description-explore {
+    background-color: #17457a;
+    width: 50%;
+    height: 350px;
+    padding: 36px;
+    border-radius: 15%;
+    margin-right: 15px;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-top .first-description-explore > h4 {
+    color: #ffd700;
+    font-size: 1.5em;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-top .first-description-explore > p {
+    margin-top: 25px;
+}
+
+
+
+
+
+/* bottom */
+.container-explore .main-content .first-content-explore .first-explore-content-bottom {
+    display: flex;
+    position: relative;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-bottom .image-slider-container-first {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    /* background-color: green; */
+    width: 600px;
+    height: 130px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-bottom .image-slider-container-first .image-cont-first {
+    height: 120px;
+    flex: 0 0 100px;
+    margin: 47px;
+    position: relative;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-bottom .image-slider-container-first .image-cont-first > span {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-bottom .image-slider-container-first .image-cont-first .img-dlm {
+    height: 100px;
+    flex: 0 0 100px;
+    border-radius: 50%;
+    /* background-color: red; */
+    overflow: hidden;
+    position: relative;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-bottom .image-slider-container-first .image-cont-first .img-dlm img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-size: center; */
+}
+
+
+/* Button */
+.container-explore .main-content .first-content-explore .first-explore-content-bottom .button-explore-slider {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-90%);
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-bottom .button-explore-slider > button {
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border: none;
+    color: #ffd700;
+    font-size: 3em;
+    border-radius: 50%;
+    cursor: pointer;
+}

@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main-element/navigation-bar.css">
     <link rel="stylesheet" href="styles/main-element/explore-page.css">
+    <!--  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/2e9ce271b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Great+Vibes">
     <title>Explore</title>
 </head>
+
 <body>
     <div class="container-explore">
         <div class="main-content">
@@ -18,7 +26,7 @@
 
                     <div class="navigation">
                         <ul>
-                            <li><a href="home.html">Home</a></li>
+                            <li><a href="../index.html">Home</a></li>
                             <li><a href="explore.html">Explore</a></li>
                             <li><a href="">News</a></li>
                         </ul>
@@ -36,21 +44,30 @@
                     </div>
                 </nav>
             </div>
-          
+
             <div class="first-content-explore">
                 <div class="circle"></div>
 
                 <div class="first-explore-content-top">
                     <div class="first-photo-explore">
-                        <img src="" alt="" id="FirstImgExplore">
+                        <img src="../main/styles/assets/explore_sate_lilit-removebg-preview.png" alt=""
+                            id="FirstImgExplore">
                     </div>
                     <div class="first-title-explore">
                         <h1 id="TitleExploreFirst">SATE LILIT</h1>
-                        <a href="" id="LinkExploreFirst">Play Video Tutorial</a>
+                        <a href="" id="LinkExploreFirst"><span><i class="fa-solid fa-play"></i></span> Play Tutorial
+                            Video </a>
                     </div>
                     <div class="first-description-explore">
                         <h4>SHORT DESCRIPTION</h4>
-                        <p id="DescriptionExploreFirst">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatum, odit praesentium ea tempore reprehenderit, amet inventore similique ipsam maiores odio illo consectetur veritatis cumque fugiat autem quidem eaque placeat dolorum facere? Quam illo quod totam quibusdam adipisci perferendis nisi!</p>
+                        <p id="DescriptionExploreFirst"> Sate lilit adalah salah satu sate khas Bali yang berbeda dari
+                            sate pada umumnya. Sate lilit awalnya berasal dari Klungkung, salah satu kabupaten di Bali..
+                            Sate ini terbuat dari daging cincang yang dicampur dengan bumbu genep dan parutan kelapa.
+                            <br> <br>
+                            Sate lilit dililitkan pada batang serai atau bambu. Sate lilit memiliki rasa gurih dan pedas
+                            yang khas, serta aroma yang menggugah selera.
+
+                        </p>
                     </div>
                 </div>
 
@@ -59,23 +76,49 @@
 
                     <div class="image-slider-container-first">
                         <div class="image-cont-first">
-                            <img src="" alt="" id="imgSlider">
-                            <img src="" alt="">
-                            <img src="" alt="">
-                            <img src="" alt="">
-                            <img src="" alt="">
+                            <div class="img-dlm">
+                                <img src="../main/styles/assets/explore_bubur_pedas-removebg-preview.png" alt="" id="imgSlider">
+                            </div>
+                            <span>Bubur Pedas</span>
                         </div>
 
-                        <div class="button-explore-slider">
-                            <div id="prevBtn"><i class="fas fa-angle-left"></i></div>
-                            <div id="nextBtn"><i class="fas fa-angle-right"></i></div>
+                        <div class="image-cont-first">
+                            <div class="img-dlm">
+                                <img src="../main/styles/assets/explore_sate_lilit-removebg-preview.png" alt="" id="imgSlider">
+                            </div>
+                            <span>Sate Lilit</span>
                         </div>
+
+                        <div class="image-cont-first">
+                            <div class="img-dlm">
+                                <img src="../main/styles/assets/explore_soto-removebg-preview.png" alt="" id="imgSlider">
+                            </div>
+                            <span>Soto Banjar</span>
+                        </div>
+
+                        <div class="image-cont-first">
+                            <div class="img-dlm">
+                                <img src="../main/styles/assets/explore_empek_empek-removebg-preview.png" alt="" id="imgSlider">
+                            </div>
+                            <span>Empek-Empek</span>
+                        </div>
+
                     </div>
+                    <div class="button-explore-slider">
+                        <button id="prevBtn"><i class="fas fa-angle-left"></i></button>
+                        <button id="nextBtn"><i class="fas fa-angle-right"></i></button>
+                    </div>
+
+                    <button class="showAll">Show All</button>
                 </div>
 
 
             </div>
+
         </div>
     </div>
+
+    <script src="../main/styles/page-function/explore-page.js"></script>
 </body>
+
 </html>
