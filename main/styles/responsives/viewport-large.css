@@ -14,5 +14,23 @@
 
 /* THIRD CONTENT - Wrappers */
 .third-content-wrappers > .third-content-texts {
-    max-width: 480px;
+    max-width: 420px;
+    margin-inline-start: 1rem;
+}
+
+.third-content-wrappers {
+    padding: 18rem 1rem;
+}
+
+/* THIRD CONTENT - Content Slider */
+.items {
+    margin: auto 0;
+}
+
+.items .button-container {
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    z-index: 100;
 }
