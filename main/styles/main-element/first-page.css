@@ -269,6 +269,7 @@
 .third-content-wrappers {
     position: relative;
     padding: 18rem 2rem;
+    /* border: 1px white solid; */
     display: flex;
 }
 
@@ -341,6 +342,7 @@
     opacity: 1;
     right: 0.8rem;
 }
+
 .third-content-explore-mores:hover > a {
     padding-right: -2rem;
 }
@@ -494,7 +496,6 @@
     font-size: 1.7em;
 }
 
-
 /* Third sliders */
 
 .items {
@@ -604,6 +605,7 @@
 /* Fourth Content */
 .fourth-content {
     position: relative;
+    margin-top: 2rem;
 }
 
 .fourth-content h1 {

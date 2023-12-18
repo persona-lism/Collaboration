@@ -64,10 +64,19 @@
 /* THIRD CONTENT - Content Slider */
 .third-content-wrappers {
     flex-direction: column;
+    padding: 15rem 2rem;
+}
+
+.third-content-wrappers > .third-content-texts {
+    margin: 0 auto;
 }
 
 .items {
+    right: 0;
     top: 2rem;
+    margin: 0 auto;
+    width: 320px;
+    height: 300px;
 }
 
 .items .button-container {
@@ -75,9 +84,6 @@
     left: 50%;
 }
 
-/* .items {
-    right: -2rem;
-}
 .items .item {
     height: 250px;
     width: 150px;
@@ -97,7 +103,7 @@
     transform: translate(-50%, -50%);
     width: 520px;
     z-index: 100;
-} */
+}
 
 /* THIRD CONTENT - Explore */
 
