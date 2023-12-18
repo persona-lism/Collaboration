@@ -55,3 +55,16 @@
 .third-content-wrappers {
     flex-direction: column;
 }
+
+.third-content-wrappers > .third-content-texts > h1 {
+    font-size: 2rem;
+}
+
+.third-content-wrappers > .third-content-texts > p {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+}
+
+.third-content-texts > .third-content-explore-mores {
+    margin: 1rem 0;
+}
