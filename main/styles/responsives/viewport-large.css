@@ -11,3 +11,8 @@
     letter-spacing: 1.8rem;
     margin-right: -1.8rem;
 }
+
+/* THIRD CONTENT - Wrappers */
+.third-content-wrappers > .third-content-texts {
+    max-width: 480px;
+}
