@@ -10,13 +10,8 @@
    src: url('../assets/Blanka.otf');
 }
 
-html {
-   overflow-x: hidden;
-}
-
 body {
    overflow-x: hidden;
-   overflow-y: hidden;
    background-color: #000;
    margin: 0;
    padding: 0;

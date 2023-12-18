@@ -76,7 +76,20 @@
     margin: 1rem 0;
 }
 
+/* THIRD CONTENT - Content Slider */
+.items {
+    top: 2rem;
+}
+
+.items .button-container {
+    width: 420px;
+    left: 50%;
+}
+
 /* FOURTH CONTENT - Content Slider */
+.fourth-content {
+    margin-top: 8rem;
+}
 .fourth-content .fourth-container-content {
     gap: 1rem;
 }
