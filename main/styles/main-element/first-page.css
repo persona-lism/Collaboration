@@ -646,7 +646,7 @@
     left: -13rem;
 }
 
-.fourth-content .forth-container-content {
+.fourth-content .fourth-container-content {
     width: 92%;
     display: flex;
     gap: 3rem;
@@ -654,35 +654,40 @@
     margin: 13rem auto;
 }
 
-.fourth-content .forth-container-content .fourth-image-content {
-    height: 500px;
-    width: 400px;
+.fourth-content .fourth-container-content .fourth-image-content {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
     background-color: #ddd;
     color: #000;
+    aspect-ratio: 3 / 4;
+    flex: 1;
 }
 
-.fourth-content  .forth-container-content .fourth-image-content img {
-    height: 320px;
+.fourth-content  .fourth-container-content .fourth-image-content img {
+    aspect-ratio: 3 / 4;
+    height: 50%;
     width: 100%;
 }
 
-.fourth-content  .forth-container-content .fourth-image-content p , span {
+.fourth-content  .fourth-container-content .fourth-image-content p, span {
     padding: 0 1rem;
     margin-top: 100px;
 }
 
-.fourth-content  .forth-container-content .fourth-image-content > p:nth-child(2) {
-    font-size: 24px;
-    height: 70px;
+.fourth-content  .fourth-container-content .fourth-image-content > p:nth-child(2) {
+    font-size: 1.3rem;
     margin-top: 10px;
+    align-self: center;
+    height: 20%;
 }
 
-.fourth-content  .forth-container-content .fourth-image-content > p:nth-child(4) {
-    margin-top: 24px;
+.fourth-content  .fourth-container-content .fourth-image-content > p:nth-child(4) {
+    margin-top: 1.2rem;
     letter-spacing: 1px;
 }
 
-.fourth-content .fourth-content-slider .button-forth-content {
+.fourth-content .fourth-content-slider .button-fourth-content {
     width: 97%;
     display: flex;
     justify-content: space-between;
@@ -693,7 +698,7 @@
     transform: translate(-50%,-50%);
 }
 
-.fourth-content .fourth-content-slider .button-forth-content > button {
+.fourth-content .fourth-content-slider .button-fourth-content > button {
     height: 70px;
     width: 70px;
     background: #FFD700;
@@ -701,8 +706,9 @@
     border: 2px solid #FFD700;
 }
 
-.fourth-content .fourth-content-slider .button-forth-content > button i {
+.fourth-content .fourth-content-slider .button-fourth-content > button i {
     font-size: 3.5em;
     color: #fff;
 }
+
 
