@@ -3,6 +3,7 @@ function changeImage(step) {
     const imgContents = imgContainer.querySelectorAll(".image-cont-first");
     const imgBig = document.querySelector("#FirstImgExplore");
     const BigTitle = document.querySelector("#TitleExploreFirst");
+    const Description = document.querySelector("#DescriptionExploreFirst");
 
     imgContents.forEach(imgContent => {
         const imgSmall = imgContent.querySelector(".img-dlm img");
@@ -23,16 +24,18 @@ function changeImage(step) {
 
 
         let nextIndex = (currentIndex + 2) % imgContents.length;
-        let prevIndex = (currentIndex - 1 + imgContents.length) % imgContents.length;
+        let prevIndex = (currentIndex - 2 + imgContents.length) % imgContents.length;
 
         if (step > 0) {
             imgBig.src = getImagePath(nextIndex);
             paragraph.innerText = getTitle(currentIndex);
-            BigTitle.innerText = getTitle(currentIndex );
+            BigTitle.innerText = getTitle((currentIndex + step + imgContents.length + 1) % imgContents.length);
+            Description.innerText = getDesc((currentIndex + step + imgContents.length + 1) % imgContents.length);
         } else if (step < 0) {
             imgBig.src = getImagePath(prevIndex);
             paragraph.innerText = getTitle(currentIndex);
-            BigTitle.innerText = getTitle(currentIndex);
+            BigTitle.innerText = getTitle((currentIndex -2 + imgContents.length) % imgContents.length);
+            Description.innerText = getDesc((currentIndex -2 + imgContents.length) % imgContents.length)
         }
     });
 }
@@ -51,3 +54,59 @@ function getTitle(indeks) {
     const titleText = ["Bubur Pedas", "Sate Lilit", "Soto Banjar", "Empek Empek"];
     return titleText[indeks];
 }
+
+function getDesc(indek) {
+    const deskripsi = [
+        "bubur pedas",
+        "Sate lilit adalah salah satu sate khas Bali yang berbeda dari sate pada umumnya. Sate lilit awalnya berasal dari Klungkung, salah satu kabupaten di Bali.. Sate ini terbuat dari daging cincang yang dicampur dengan bumbu genep dan parutan kelapa. <br> <br> Sate lilit dililitkan pada batang serai atau bambu. Sate lilit memiliki rasa gurih dan pedas yang khas, serta aroma yang menggugah selera.",
+        "soto banjar",
+        "empek empek"
+    ]
+    return deskripsi[indek]
+}
+
+const all = document.querySelector(".showall");
+const less = document.querySelector(".showless");
+const imgContainer = document.querySelector(".image-slider-container-first");
+
+let isExpanded = false;
+
+all.addEventListener("click", function() {
+    const imgContents = imgContainer.querySelectorAll(".image-cont-first");
+
+    imgContainer.style.overflow = "visible";
+    imgContainer.classList.add("active1");
+    less.style.marginTop = "12em";
+
+    imgContents.forEach(imgContent => {
+        imgContent.style.opacity = 1;
+    });
+
+    document.querySelector(".button-explore-slider").style.display = "none"; 
+
+    all.style.display = "none";
+    less.style.display = "block";
+
+    isExpanded = true;
+});
+
+less.addEventListener("click", function() {
+    const imgContents = imgContainer.querySelectorAll(".image-cont-first");
+    const contentImg = imgContainer.querySelector(".actives");
+
+    if (isExpanded) {
+        imgContainer.style.overflow = "hidden";
+        imgContainer.classList.remove("active1");
+
+        imgContents.forEach(imgContent => {
+            imgContent.style.opacity = imgContent.classList.contains("actives") ? 1 : 0.5;
+        });
+
+        document.querySelector(".button-explore-slider").style.display = "flex"; 
+
+        all.style.display = "block";
+        less.style.display = "none";
+
+        isExpanded = false;
+    }
+});

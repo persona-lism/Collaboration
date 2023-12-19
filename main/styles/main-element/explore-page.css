@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -10,9 +11,10 @@ body {
 
 .container-explore .main-content {
     background-image: linear-gradient(to left top , #1a5a91 60% , #101746 95%);
-    height: 720px;
+    height: 850px;
     color: #fff;
     position: relative;
+    overflow: hidden;
 }
 
 .container-explore .main-content .first-content-explore {
@@ -104,6 +106,49 @@ body {
     position: relative;
 }
 
+.container-explore .main-content .first-content-explore .first-explore-content-bottom > .side-text {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 3rem;
+    left: -4rem;
+    z-index: 2;
+    font-size: 1.6em;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-bottom > .side-text span {
+    margin-left: 5px;
+    font-size: 1.5em;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-bottom > .showall {
+    padding: 8px 24px;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 2.5rem;
+    transform: translate(-50%,100%);
+    cursor: pointer;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-bottom > .showless {
+    padding: 8px 24px;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 2.5rem;
+    transform: translate(-50%,100%);
+    display: none;
+    cursor: pointer;
+}
+
 .container-explore .main-content .first-content-explore .first-explore-content-bottom .image-slider-container-first {
     display: flex;
     align-items: center;
@@ -120,7 +165,7 @@ body {
 .container-explore .main-content .first-content-explore .first-explore-content-bottom .image-slider-container-first .image-cont-first {
     height: 120px;
     flex: 0 0 100px;
-    margin: 47px;
+    margin:0 47px;
     position: relative;
     opacity: 0.5;
 }
@@ -137,6 +182,7 @@ body {
 
 .container-explore .main-content .first-content-explore .first-explore-content-bottom .image-slider-container-first .image-cont-first  > p {
     color: #fff;
+    display: none;
 }
 
 
@@ -183,4 +229,23 @@ body {
     font-size: 3em;
     border-radius: 50%;
     cursor: pointer;
+}
+
+
+/* add classlist */
+.container-explore .main-content .first-content-explore .first-explore-content-bottom .active1 { 
+    display: flex;
+    justify-content: space-around;
+    width: 800px;
+    height: 350px;
+    transform: translate(-50%,-50%);
+    position: relative;
+    left: 50%;
+    flex-wrap: wrap;
+    margin-top: 6em;
+} 
+/* ^^ pengganti image-slider-container-first */
+
+.container-explore .main-content .first-content-explore .first-explore-content-bottom .image-slider-container-first .actives {
+    opacity: 1;
 }
