@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main/styles/main-element/navigation-bar.css">
+    <link rel="stylesheet" href="main/styles/main-element/hamburger-menu.css">
     <link rel="stylesheet" href="main/styles/main-element/first-page.css">
     <link rel="stylesheet" href="main/styles/main-element/footer.css">
     <!--  -->
@@ -40,11 +41,13 @@
                             <input type="text" placeholder="Search in here..">
                             <i class="fa-solid fa-microphone"></i>
                         </div>
-                        <div class="hamburger-menu">
-                            <input type="checkbox" name="" id="">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                        <div class="hamburger-menu" id="hamburger-menu">
+                            <a href="javascript:void(0)" onclick="hamburgerMenu(); hamburgerMenuAnimation()">
+                                <i class="fa-solid fa-bars"></i>
+                            </a>
+                        </div>
+                        <div class="hamburger-content" id="hamburger-content">
+                            Tes
                         </div>
                     </div>
                 </nav>
@@ -268,4 +271,5 @@
 </body>
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
     <script src="main/styles/page-function/first-page.js"></script>
+    <script src="main/styles/page-function/hamburger-menu.js"></script>
 </html>
