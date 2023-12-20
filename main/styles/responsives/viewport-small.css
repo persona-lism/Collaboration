@@ -1,6 +1,13 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
+
+
 /* NAVIGATION BAR */
+body {
+    overflow-x: auto;
+    width: 100%;
+}
+
 .navigation li {
     display: none;
 }
@@ -26,6 +33,10 @@
 }
 
 /* SECOND CONTENT - Container */
+.second-content {
+    overflow-x: hidden;
+}
+
 .second-content-top-grid, .second-content-bottom-grid {
     padding: 0 1rem;
     margin: 0.5rem auto;
@@ -61,6 +72,7 @@
 /* THIRD CONTENT - Explore */
 .third-content-wrappers {
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .third-content-wrappers > .third-content-texts > h1 {
@@ -125,7 +137,8 @@
 }
 
 .fourth-content .fourth-container-content {
-    gap: 1rem;
+    /* gap: 1rem; */
+    overflow-x: hidden;
 }
 
 .fourth-content  .fourth-container-content .fourth-image-content > p:nth-child(2) {

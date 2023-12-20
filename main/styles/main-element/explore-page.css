@@ -45,6 +45,7 @@ body {
     margin-left: 3rem;
     position: relative;
     z-index: 2;
+    z-index: 0;
 }
 
 .container-explore .main-content .first-content-explore .first-explore-content-top .first-photo-explore img {
@@ -53,6 +54,7 @@ body {
     border-radius: 10px;
     overflow: hidden;
     object-fit: cover;
+    background-position: center;
 }
 
 .container-explore .main-content .first-content-explore .first-explore-content-top .first-title-explore {
@@ -109,15 +111,16 @@ body {
 .container-explore .main-content .first-content-explore .first-explore-content-bottom > .side-text {
     transform: rotate(-90deg);
     position: absolute;
-    top: 3rem;
-    left: -4rem;
+    top: 6rem;
+    left: -8rem;
     z-index: 2;
-    font-size: 1.6em;
+    font-size: 2.5em;
+    letter-spacing: 3px;
 }
 
 .container-explore .main-content .first-content-explore .first-explore-content-bottom > .side-text span {
     margin-left: 5px;
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 .container-explore .main-content .first-content-explore .first-explore-content-bottom > .showall {

@@ -617,7 +617,7 @@
     position: absolute;
     bottom: -10rem;
     right: -8rem;
-    z-index: 2;
+    z-index: 1;
 }
 
 .fourth-content .fourth-content-slider {

@@ -24,7 +24,7 @@ function changeImage(step) {
 
 
         let nextIndex = (currentIndex + 2) % imgContents.length;
-        let prevIndex = (currentIndex - 2 + imgContents.length) % imgContents.length;
+        let prevIndex = (currentIndex - 6 + imgContents.length) % imgContents.length;
 
         if (step > 0) {
             imgBig.src = getImagePath(nextIndex);
@@ -34,8 +34,8 @@ function changeImage(step) {
         } else if (step < 0) {
             imgBig.src = getImagePath(prevIndex);
             paragraph.innerText = getTitle(currentIndex);
-            BigTitle.innerText = getTitle((currentIndex -2 + imgContents.length) % imgContents.length);
-            Description.innerText = getDesc((currentIndex -2 + imgContents.length) % imgContents.length)
+            BigTitle.innerText = getTitle((currentIndex -6 + imgContents.length) % imgContents.length);
+            Description.innerText = getDesc((currentIndex -6 + imgContents.length) % imgContents.length)
         }
     });
 }
@@ -45,25 +45,34 @@ function getImagePath(index) {
         "../main/styles/assets/explore_bubur_pedas-removebg-preview.png",
         "../main/styles/assets/explore_sate_lilit-removebg-preview.png",
         "../main/styles/assets/explore_soto-removebg-preview.png",
-        "../main/styles/assets/explore_empek_empek-removebg-preview.png"
+        "../main/styles/assets/explore_empek_empek-removebg-preview.png",
+        "../main/styles/assets/explore-gudeg-removebg-preview.png",
+        "../main/styles/assets/explore-mie_aceh-removebg-preview.png",
+        "../main/styles/assets/explore-seblak-removebg-preview.png",
+        "../main/styles/assets/explore_rawon-removebg-preview.png"
     ];
     return imagePath[index];
 }
 
 function getTitle(indeks) {
-    const titleText = ["Bubur Pedas", "Sate Lilit", "Soto Banjar", "Empek Empek"];
+    const titleText = ["Bubur Pedas", "Sate Lilit", "Soto Banjar", "Empek Empek","Gudeg","Mie Aceh","Seblak","Rawon"];
     return titleText[indeks];
 }
 
 function getDesc(indek) {
     const deskripsi = [
-        "bubur pedas",
-        "Sate lilit adalah salah satu sate khas Bali yang berbeda dari sate pada umumnya. Sate lilit awalnya berasal dari Klungkung, salah satu kabupaten di Bali.. Sate ini terbuat dari daging cincang yang dicampur dengan bumbu genep dan parutan kelapa. <br> <br> Sate lilit dililitkan pada batang serai atau bambu. Sate lilit memiliki rasa gurih dan pedas yang khas, serta aroma yang menggugah selera.",
-        "soto banjar",
-        "empek empek"
-    ]
-    return deskripsi[indek]
+        "Makanan tradisional khas orang Melayu Sambas dari Kalimantan Barat. Terbuat dari beras yang ditumbuk halus, bubur ini disajikan dalam bentuk sejenis bubur dengan campuran rempah dan sayuran",
+        "Sate lilit adalah salah satu sate khas Bali yang berbeda dari sate pada umumnya. Sate lilit awalnya berasal dari Klungkung, salah satu kabupaten di Bali.. Sate ini terbuat dari daging cincang yang dicampur dengan bumbu genep dan parutan kelapa.\n\n Sate lilit dililitkan pada batang serai atau bambu. Sate lilit memiliki rasa gurih dan pedas yang khas, serta aroma yang menggugah selera.",
+        "Hidangan khas suku Banjar di Kalimantan Selatan. Soto ini terbuat dari daging ayam yang dimasak dengan kuah gurih yang khas.\n\nAromanya yang harum, dihasilkan oleh rempah-rempah seperti kayu manis, biji pala, dan cengkeh Soto Banjar terkenal karena rasa kuahnya yang gurih.",
+        "Makanan khas Palembang yang terbuat dari adonan tepung sagu, ikan tenggiri, dan beberapa bahan lainnya yang disajikan bersama kuah cuko",
+        "Hidangan khas Indonesia, terutama berasal dari Yogyakarta dan Jawa Tengah.\n\nHidangan ini terbuat dari nangka muda yang dimasak dalam santan dan gula merah, memberikan rasa manis khas. Gudeg biasanya disajikan dengan nasi, ayam, telur, sambal, dan krecek.",
+        "Masakan mie pedas khas Aceh, Indonesia. Mie ini memiliki ciri khas berupa mi kuning tebal yang disajikan dengan irisan daging sapi, daging kambing, atau makanan laut seperti udang dan cumi.\n\nMie Aceh dikenal sebagai sajian yang hanyut dalam racikan bumbu yang tajam dan kaya rempah",
+        "Hidangan tradisional Indonesia yang berasal dari Bandung, Jawa Barat.\n\nHidangan ini terkenal dengan rasa pedas dan gurih. Seblak umumnya terbuat dari berbagai bahan dimasak bersama dengan bumbu pedas yang khas, seperti cabai, bawang, dan berbagai rempah-rempah.",
+        "Makanan yang dibuat dari aneka bumbu, rempah, dan potongan daging sapi. Salah satu rempah yang digunakan untuk membuat rawon adalah kluwek atau keluak.Rempah hitam ini merupakan ciri khas utama rawon"
+    ];
+    return deskripsi[indek];
 }
+
 
 const all = document.querySelector(".showall");
 const less = document.querySelector(".showless");
@@ -71,15 +80,30 @@ const imgContainer = document.querySelector(".image-slider-container-first");
 
 let isExpanded = false;
 
-all.addEventListener("click", function() {
-    const imgContents = imgContainer.querySelectorAll(".image-cont-first");
+const imgContents = imgContainer.querySelectorAll(".image-cont-first");
+const imgBig = document.querySelector("#FirstImgExplore");
+const BigTitle = document.querySelector("#TitleExploreFirst");
+const Description = document.querySelector("#DescriptionExploreFirst");
+const paragraph = document.querySelector(".image-cont-first span");
 
+imgContents.forEach(imgContent => {
+    imgContent.addEventListener("click", function () {
+        const currentIndex = parseInt(this.querySelector("p").innerText) - 1;
+        imgBig.src = getImagePath(currentIndex);
+        paragraph.innerText = getTitle(currentIndex);
+        BigTitle.innerText = getTitle(currentIndex);
+        Description.innerHTML = getDesc(currentIndex);
+    });
+});
+
+all.addEventListener("click", function() {
     imgContainer.style.overflow = "visible";
     imgContainer.classList.add("active1");
     less.style.marginTop = "12em";
 
     imgContents.forEach(imgContent => {
         imgContent.style.opacity = 1;
+        imgContent.style.cursor = "pointer";
     });
 
     document.querySelector(".button-explore-slider").style.display = "none"; 
@@ -90,9 +114,9 @@ all.addEventListener("click", function() {
     isExpanded = true;
 });
 
+
 less.addEventListener("click", function() {
     const imgContents = imgContainer.querySelectorAll(".image-cont-first");
-    const contentImg = imgContainer.querySelector(".actives");
 
     if (isExpanded) {
         imgContainer.style.overflow = "hidden";
@@ -110,3 +134,4 @@ less.addEventListener("click", function() {
         isExpanded = false;
     }
 });
+
