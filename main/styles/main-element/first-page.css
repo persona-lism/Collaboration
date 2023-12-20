@@ -621,16 +621,13 @@
 
 .fourth-content > .accessories-6 > img {
     position: absolute;
-<<<<<<< HEAD
-    bottom: -10rem;
+    /* bottom: -10rem;
     right: -8rem;
-    z-index: 1;
-=======
+    z-index: 1; */
     top: -12rem;
     right: -10rem;
     z-index: 2;
     transform: scale(0.7);
->>>>>>> 49ecb55a4130485cdd15680ce39551c481673b9d
 }
 
 .fourth-content .fourth-content-slider {
@@ -668,7 +665,7 @@
 }
 
 .fourth-content .fourth-container-content .fourth-image-content {
-    max-width: 400px;
+    max-width: 300px;
     width: 100%;
     height: auto;
     background-color: #ddd;
@@ -678,9 +675,12 @@
 }
 
 .fourth-content .fourth-container-content .fourth-image-content img {
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 4/ 3;
     height: 50%;
     width: 100%;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
 }
 
 .fourth-content .fourth-container-content .fourth-image-content p, span {

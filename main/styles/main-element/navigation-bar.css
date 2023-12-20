@@ -10,10 +10,13 @@
    src: url('../assets/Blanka.otf');
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    overflow-x: hidden;
    background-color: #000;
-   /* scroll-behavior: smooth; */
    position: relative;
 }
 

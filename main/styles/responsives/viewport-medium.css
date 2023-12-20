@@ -19,6 +19,12 @@
     transform: scale(1.5);
 }
 
+/* HAMBURGER MENU */
+.hamburger-menu {
+    display: none;
+}
+
+
 /* FIRST CONTENT - Explore Indonesia Content */
 .explore-indonesia-content > .explore-indonesia-title > #explore {
     font-size: 3.6em;
