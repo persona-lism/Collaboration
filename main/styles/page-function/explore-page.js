@@ -7,8 +7,8 @@ function changeImage(step) {
 
     imgContents.forEach(imgContent => {
         const imgSmall = imgContent.querySelector(".img-dlm img");
-        const span = imgContent.querySelector("p");
-        const paragraph = imgContent.querySelector("span");
+        const span = imgContent.querySelector(".p-1");
+        const paragraph = imgContent.querySelector(".span-1");
 
         let currentIndex = parseInt(span.innerText) - 1;
         currentIndex = (currentIndex + step + imgContents.length) % imgContents.length;
@@ -95,6 +95,7 @@ imgContents.forEach(imgContent => {
         Description.innerHTML = getDesc(currentIndex);
     });
 });
+
 
 all.addEventListener("click", function() {
     imgContainer.style.overflow = "visible";
