@@ -71,7 +71,7 @@ body {
 .navigation-bar nav > .navigation {
    display: flex;
    gap: 2rem;
-   width: auto;
+   width: fit-content;
    margin: 1rem;
    /* background-color: red; */
 } 
@@ -148,58 +148,4 @@ body {
    color: #fff;
    font-size: 1.2rem;
    padding: 12px;
-}
-
-/* Hamburger menu */
-.navigation > .hamburger-menu {
-   display: none;
-   flex-direction: column;
-   height: 20px;
-   justify-content: space-between;
-   position: relative;
-   z-index: 3;
-}
-
-.navigation > .hamburger-menu input {
-   position: absolute;
-   width: 43px;
-   height: 32px;
-   opacity: 0;
-   left: -6px;
-   top: -4px;
-   cursor: pointer;
-}
-
-.navigation > .hamburger-menu span {
-   display: block;
-   width: 28px;
-   height: 3px;
-   background-color:rgb(248, 242, 242);
-   border-radius: 3px;
-   transition: all 0.5s;
-}
-
-/* Hamburger animation */
-
-.navigation > .hamburger-menu span:nth-child(2) {
-    transform-origin: 0 0;
-}
-
-.navigation > .hamburger-menu span:nth-child(4) {
-    transform-origin: 0 100%;
-}
-
-.navigation > .hamburger-menu input:checked ~ span:nth-child(2) {
-    background-color: rgb(248, 242, 242);
-    transform: rotate(45deg) translate(-1px,-1px);
-}
-
-.navigation > .hamburger-menu input:checked ~ span:nth-child(3) {
-    opacity: 0;
-    transform: scale(0);
-}
-
-.navigation > .hamburger-menu input:checked ~ span:nth-child(4) {
-    background-color: rgb(248, 242, 242);
-    transform: rotate(-45deg) translate(-1px,0);
 }
