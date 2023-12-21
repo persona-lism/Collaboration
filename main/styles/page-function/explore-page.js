@@ -74,30 +74,22 @@ function getDesc(indek) {
 }
 
 
-const all = document.querySelector(".showall");
-const less = document.querySelector(".showless");
-const imgContainer = document.querySelector(".image-slider-container-first");
 
 let isExpanded = false;
+const all = document.querySelector(".showall");
+const less = document.querySelector(".showless");
 
+const imgContainer = document.querySelector(".image-slider-container-first");
 const imgContents = imgContainer.querySelectorAll(".image-cont-first");
 const imgBig = document.querySelector("#FirstImgExplore");
 const BigTitle = document.querySelector("#TitleExploreFirst");
 const Description = document.querySelector("#DescriptionExploreFirst");
 const paragraph = document.querySelector(".image-cont-first span");
 
-imgContents.forEach(imgContent => {
-    imgContent.addEventListener("click", function () {
-        const currentIndex = parseInt(this.querySelector("p").innerText) - 1;
-        imgBig.src = getImagePath(currentIndex);
-        paragraph.innerText = getTitle(currentIndex);
-        BigTitle.innerText = getTitle(currentIndex);
-        Description.innerHTML = getDesc(currentIndex);
-    });
-});
 
 
 all.addEventListener("click", function() {
+
     imgContainer.style.overflow = "visible";
     imgContainer.classList.add("active1");
     less.style.marginTop = "12em";
@@ -105,6 +97,14 @@ all.addEventListener("click", function() {
     imgContents.forEach(imgContent => {
         imgContent.style.opacity = 1;
         imgContent.style.cursor = "pointer";
+
+        imgContent.addEventListener("click", function () {
+            const currentIndex = parseInt(this.querySelector("p").innerText) - 1;
+            imgBig.src = getImagePath(currentIndex);
+            paragraph.innerText = getTitle(currentIndex);
+            BigTitle.innerText = getTitle(currentIndex);
+            Description.innerHTML = getDesc(currentIndex);
+        });
     });
 
     document.querySelector(".button-explore-slider").style.display = "none"; 
