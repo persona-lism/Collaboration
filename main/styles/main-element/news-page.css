@@ -18,7 +18,7 @@ body {
 }
 
 .second-content-first-content {
-    width: 30%;
+    width: 40%;
 }
 
 .news-content-top-post {
@@ -41,7 +41,7 @@ body {
     font-size: 3rem;
     font-weight: bold;
     padding: 1rem;
-    margin: auto;
+    margin: auto 0.5rem;
 }
 
 .news-content-top-post-texts {
@@ -54,7 +54,7 @@ body {
     display: grid;
     gap: 1rem;
     padding-inline: 1rem;
-    width: 70%;
+    width: 60%;
     height: fit-content;
 }
 
