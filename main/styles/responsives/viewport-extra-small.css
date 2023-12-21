@@ -1,6 +1,10 @@
 /* Extra small devices (phones, 600px and down) */
 
 /* NAVIGATION BAR */
+.navigation-bar nav > .logo {
+    margin-left: 1rem;
+}
+
 .navigation li {
     display: none;
 }
@@ -12,6 +16,25 @@
 .navigation-bar nav > .logo > img {
     transform: scale(1);
 }
+
+.navigation-bar nav > .navigation {
+    gap: 1rem;
+    margin: 0.5rem;
+}
+
+.navigation > .search-bar-content input {
+    font-size: 1rem;
+}
+
+.navigation > .search-bar-content i {
+    font-size: 1rem;
+}
+
+/* HAMBURGER MENU */
+.hamburger-menu {
+    display: flex;
+}
+
 
 /* FIRST CONTENT - Explore Indonesia Content */
 .explore-indonesia-content > .explore-indonesia-title > #explore {
@@ -34,23 +57,27 @@
 }
 
 .second-content-container {
-    padding: 8px 16px;
-    width: 330px;
-    height: 240px;
+    padding: 4px 12px;
+    width: 300px;
+    height: 200px;
 }
 
-.second-content-container > h3 {
+.second-content-container > p {
     font-size: 1rem;
 }
 
+.second-content-container > h3 {
+    font-size: 0.8rem;
+}
+
 .second-content-container > .multicultural > h1 {
-    margin: 6px 0;
-    font-size: 1.7rem;
+    margin: 4px 0;
+    font-size: 1.4rem;
 }
 
 .second-content-container > .country > h1 {
-    margin: 4px 0;
-    font-size: 1.7rem;
+    margin: 2px 0;
+    font-size: 1.4rem;
 }
 
 .second-content-container > p {
@@ -72,7 +99,7 @@
     right: 0;
     top: 2rem;
     margin: 0 auto;
-    width: 320px;
+    width: 300px;
     height: 260px;
 }
 
@@ -120,7 +147,17 @@
     margin: 1rem 0;
 }
 
+.items > .accessories-9 > img {
+    transform: translate(-50%, -50%) scale(0.8);
+}
+
 /* FOURTH CONTENT - Content */
 .fourth-content {
     margin-top: 4rem;
+}
+
+.fourth-content > .accessories-6 > img {
+    transform: scale(0.6);
+    right: -12rem;
+    z-index: -3;
 }

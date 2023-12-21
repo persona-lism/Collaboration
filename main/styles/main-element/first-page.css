@@ -32,7 +32,7 @@
 }
 
 .container > .second-content {
-    padding-bottom: 26rem;
+    padding-bottom: 36rem;
     background: linear-gradient(to bottom, transparent 55%, #000);
 }
 
@@ -268,8 +268,10 @@
 .third-content-wrappers {
     position: relative;
     padding: 18rem 2rem;
-    /* border: 1px white solid; */
     display: flex;
+    gap: 2rem 0;
+    overflow-x: hidden;
+    flex-wrap: wrap;
 }
 
 .third-content-wrappers > .third-content-texts {
@@ -507,7 +509,7 @@
     position: relative;
     right: -8rem;
     height: 350px;
-    width: 400px;
+    width: 800px;
 }
 
 .items .item {
@@ -520,8 +522,10 @@
     z-index: -1;
     opacity: 0;
     background-color: red;
-    height: 350px;
-    width: 250px;
+    max-height: 350px;
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
 }
 
 @keyframes item-highlighted {
@@ -569,9 +573,9 @@
 .items .button-container {
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    width: 520px;
+    width: 480px;
     z-index: 100;
 }
 
@@ -619,15 +623,19 @@
     text-align: center;
 }
 
+.fourth-content {
+    overflow: hidden;
+}
+
 .fourth-content > .accessories-6 > img {
     position: absolute;
     /* bottom: -10rem;
     right: -8rem;
     z-index: 1; */
-    top: -12rem;
+    top: -8rem;
     right: -10rem;
     z-index: 2;
-    transform: scale(0.7);
+    transform: scale(0.6);
 }
 
 .fourth-content .fourth-content-slider {
@@ -717,6 +725,7 @@
     background: #FFD700;
     border-radius: 50%;
     border: 2px solid #FFD700;
+    cursor: pointer;
 }
 
 .fourth-content .fourth-content-slider .button-fourth-content > button i {

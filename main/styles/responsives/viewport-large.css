@@ -1,5 +1,27 @@
 /* Large devices (laptops/desktops, 992px and up) */
 
+/* NAVIGATION BAR */
+.navigation-bar nav > .logo {
+    margin-left: 1rem;
+}
+
+.navigation-bar nav > .navigation,
+.navigation-bar nav > .navigation ul {
+    gap: 1rem;
+}
+
+.navigation-bar nav > .navigation ul li {
+    font-size: 1.2rem;
+}
+
+.navigation > .search-bar-content input {
+    font-size: 1rem;
+}
+
+.navigation > .search-bar-content i {
+    font-size: 1rem;
+}
+
 /* FIRST CONTENT - Explore Indonesia Content */
 .explore-indonesia-content > .explore-indonesia-title > #explore {
     font-size: 4.3em;
@@ -10,6 +32,45 @@
     font-size: 5.4em;
     letter-spacing: 1.8rem;
     margin-right: -1.8rem;
+}
+
+/* SECOND CONTENT - Container */
+.second-content-top-grid, .second-content-bottom-grid {
+    padding: 0 1rem;
+    margin: 1rem auto;
+    width: 80%;
+    gap: 1.5rem;
+}
+
+.second-content-container {
+    padding: 8px 16px;
+    width: 430px;
+    height: 310px;
+}
+
+.second-content-container > .multicultural > h1 {
+    margin: 6px 0;
+    font-size: 2rem;
+}
+
+.second-content-container > .country > h1 {
+    margin: 4px 0;
+    font-size: 2rem;
+}
+
+.second-content-container > p {
+    margin: 6px 0;
+    font-size: 1rem;
+}
+
+.second-content-image > .first-page-accessories-4 {
+    position: absolute;
+    z-index: -100;
+    top: 55%;
+    left: 15%;
+    opacity: 0.25;
+    scale: 1.2;
+    z-index: -101;
 }
 
 /* THIRD CONTENT - Wrappers */
@@ -23,13 +84,23 @@
 }
 
 /* THIRD CONTENT - Content Slider */
+.third-content-wrappers {
+    overflow-x: hidden;
+}
+
 .items {
     margin: auto 0;
+    width: 400px;
+}
+
+.items .item {
+    width: 200px;
+    height: 300px;
 }
 
 .items .button-container {
     top: 50%;
-    left: 30%;
+    left: 10%;
     transform: translate(-50%, -50%);
     width: 360px;
     z-index: 100;
@@ -51,3 +122,5 @@
 .fourth-content .fourth-container-content .fourth-image-content > p:nth-child(4) {
     font-size: 1rem;
 }
+
+* { border: 1px white solid; }
