@@ -1,66 +1,86 @@
-.footer {
-    background-color: #333;
-    height: fit-content;
-    bottom: 0;
-    left: 0;
+.first-footer-content {
+    background: radial-gradient(circle at 0%, #323131 0%, #000 100%);
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    color: #222;
-    gap: 5px;
+    grid-template-columns: 30fr 70fr;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
-.first-footer-content {
-    padding: 2rem 4rem;
-    background-color: #f2f2f2;
+.footer-title {
+    grid-area: 1;
     display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2rem;
     gap: 1rem;
 }
 
-.second-footer-content {
-    padding: 2rem 4rem;
-    background-color: #f2f2f2;
+.footer-main-content {
+    grid-area: 1;
     display: flex;
-    gap: 4rem;
+    flex-direction: row;
     justify-content: space-between;
+    padding: 1.5rem 2rem;
+    gap: 1rem;
 }
 
-.third-footer-content {
-    padding: 2rem 4rem;
-    background-color: #f2f2f2;
-    grid-area: 1 / 2 / span 2 / span 1;
-}
-
-.fourth-footer-content {
-    padding: 2rem 4rem;
-    background-color: #f2f2f2;
-    grid-area: 3 / 1 / span 1 / span 2;
+.footer-copyright {
+    grid-area: 2 / 1 / span1 / span2;
+    padding: 1rem 2rem;
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer li {
     list-style-type: none;
-    margin: 4px 0;
 }
 
-.first-footer-content > .first-footer-content-caption {
-    flex: 1;
-    justify-content: center;
-    align-items: center;
-    padding: 4rem 0;
-    /* border: 1px black solid; */
+.footer-copyright::before {
+    border: 1px #fff solid;
+    content: '';
+    display: block;
+    width: 100%;
 }
 
-.first-footer-content > .first-footer-content-caption:nth-child(1) {
-    text-transform: uppercase;
+.footer-copyright > p {
+    margin: 12px 0 6px 0;
+    text-align: left;
+}
+
+.footer-menu > ul,
+.footer-category > ul,
+.footer-contact > ul {
+    gap: 2px;
     display: flex;
-    gap: 0.3rem;
+    flex-direction: column;
 }
 
-.first-footer-content > .first-footer-content-caption > #borneo {
-    color: #888;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+.footer-title > .subscribe-letter {
+    display: flex;
+    flex-direction: row;
 }
 
-.first-footer-content > .first-footer-content-caption > #space {
-    color: #111;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+.footer-title > .subscribe-letter > input {
+    padding: 8px 16px;
+    font-size: 18px;
+    outline: 0;
+    border: 1px white solid;
+    background-color: transparent;
 }
+
+.footer-title > .subscribe-letter > .subscribe-button {
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    background-color: #2a8694;
+}
+
+.footer-title > .subscribe-letter > .subscribe-button > a {
+    padding: 8px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* * { border: 1px red solid ;} */
