@@ -22,6 +22,19 @@
     font-size: 1rem;
 }
 
+/* FOOTER */
+.footer h1 {
+    font-size: 1.7rem;
+}
+
+.footer p, li {
+    font-size: 0.9rem;
+}
+
+.first-footer-content > .footer-main-content {
+    width: 100%;
+}
+
 /* FIRST CONTENT - Explore Indonesia Content */
 .explore-indonesia-content > .explore-indonesia-title > #explore {
     font-size: 4.3em;

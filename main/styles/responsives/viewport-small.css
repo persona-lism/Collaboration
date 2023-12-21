@@ -47,6 +47,44 @@
     margin-right: -0.9rem;
 }
 
+/* FOOTER */
+.footer-title {
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.footer-main-content {
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+
+.footer-copyright {
+    grid-area: 3 / 1 / span 1 / span 2;
+}
+
+.footer h1 {
+    font-size: 1.5rem;
+}
+
+.footer p, li {
+    font-size: 0.9rem;
+}
+
+.footer-main-content {
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+}
+
+.footer-menu li,
+.footer-category li,
+.footer-contact li {
+    margin: 2px 0;
+}
+
+.footer-menu ul,
+.footer-category ul,
+.footer-contact ul {
+    margin: 4px 0;
+}
+
 /* SECOND CONTENT - Container */
 .second-content {
     overflow-x: hidden;

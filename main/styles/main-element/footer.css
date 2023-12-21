@@ -1,6 +1,7 @@
 .first-footer-content {
     background: radial-gradient(circle at 0%, #323131 0%, #000 100%);
     display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(30fr, 70fr)); */
     grid-template-columns: 30fr 70fr;
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
@@ -21,10 +22,11 @@
     justify-content: space-between;
     padding: 1.5rem 2rem;
     gap: 3rem;
+    flex-wrap: wrap;
 }
 
 .footer-copyright {
-    grid-area: 2 / 1 / span1 / span2;
+    grid-area: 2 / 1 / span 1 / span 2;
     padding: 1rem 2rem;
     justify-content: start;
     display: flex;
@@ -66,6 +68,8 @@
     outline: 0;
     border: 1px white solid;
     background-color: transparent;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
 .footer-title > .subscribe-letter > .subscribe-button {
@@ -81,6 +85,7 @@
     text-decoration: none;
     cursor: pointer;
     color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
 /* * { border: 1px red solid ;} */

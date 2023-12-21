@@ -36,6 +36,25 @@
     display: none;
 }
 
+/* FOOTER */
+.footer h1 {
+    font-size: 1.5rem;
+}
+
+.footer p, li {
+    font-size: 0.9rem;
+}
+
+.footer-main-content {
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+
+.footer-menu ul,
+.footer-category ul,
+.footer-contact ul {
+    margin: 4px 0;
+}
 
 /* FIRST CONTENT - Explore Indonesia Content */
 .explore-indonesia-content > .explore-indonesia-title > #explore {
