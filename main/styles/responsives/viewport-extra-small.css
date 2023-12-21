@@ -30,6 +30,10 @@
     font-size: 1rem;
 }
 
+.navigation > .search-bar-content {
+    min-width: 200px;
+}
+
 /* HAMBURGER MENU */
 .hamburger-menu {
     display: flex;
