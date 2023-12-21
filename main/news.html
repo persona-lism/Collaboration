@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../main/styles/main-element/navigation-bar.css">
         <link rel="stylesheet" href="../main/styles/main-element/news-page.css">
+        <link rel="stylesheet" href="../main/styles/main-element/hamburger-menu.css">
         <!--  -->
         <link rel="stylesheet" href="../main/styles/responsives/viewport-extra-small.css" media="screen and (max-width: 600px)">
         <link rel="stylesheet" href="../main/styles/responsives/viewport-small.css" media="screen and (min-width: 601px) and (max-width: 768px)">
@@ -35,15 +36,25 @@
                                 <input type="text" placeholder="Search in here..">
                                 <i class="fa-solid fa-microphone"></i>
                             </div>
-                            <div class="hamburger-menu">
-                                <!-- <input type="checkbox" name="" id=""> -->
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                            <div class="hamburger-menu" id="hamburger-menu">
+                                <a href="javascript:void(0)" onclick="hamburgerMenu(); hamburgerMenuAnimation()">
+                                    <i class="fa-solid fa-bars"></i>
+                                </a>
                             </div>
                         </div>
                     </nav>
                 </div>
+            </div>
+            <div class="hamburger-content" id="hamburger-content">
+                <a href="#second">
+                    <h1>Home</h1>
+                </a>
+                <a href="main/explore.html">
+                    <h1>Explore</h1>
+                </a>
+                <a href="main/news.html">
+                    <h1>News</h1>
+                </a>
             </div>
             <h1 class="news-h1">LATEST NEWS</h1>
             <div class="second-content">

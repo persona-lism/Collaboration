@@ -5,6 +5,10 @@
     align-items: center;
 }
 
+.explore-indonesia-content {
+    overflow-x: hidden;
+}
+
 .explore-indonesia-content > .explore-indonesia-title > #explore {
     color: white;
     font-size: 5.5em;
@@ -635,7 +639,7 @@
     right: -8rem;
     z-index: 1; */
     top: -8rem;
-    right: -10rem;
+    right: -12rem;
     z-index: 2;
     transform: scale(0.6);
 }
