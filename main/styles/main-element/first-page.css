@@ -26,6 +26,7 @@
     color: white;
     position: relative;
     margin-top: -1rem;
+    transform: translateY(-0.5rem);
 }
 
 .explore-indonesia-content > .explore-indonesia-title > #indonesia > span  {
