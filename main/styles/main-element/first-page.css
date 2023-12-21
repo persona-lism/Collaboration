@@ -2,12 +2,12 @@
     text-align: end;
     margin-inline: 2rem;
     margin-top: 150px;
-    align-items: center;
-}
-
-.explore-indonesia-content {
+    display: block;
+    flex-direction: column;
+    justify-content: end;
     overflow-x: hidden;
 }
+
 
 .explore-indonesia-content > .explore-indonesia-title > #explore {
     color: white;
@@ -26,14 +26,6 @@
     color: white;
     position: relative;
     margin-top: -1rem;
-    transform: translateY(-0.5rem);
-}
-
-.explore-indonesia-content > .explore-indonesia-title > #indonesia > span  {
-    height: 70%;
-    position: absolute;
-    color: red;
-    overflow: hidden;
 }
 
 .container > .second-content {
