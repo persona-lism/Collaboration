@@ -20,7 +20,7 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 1.5rem 2rem;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .footer-copyright {
