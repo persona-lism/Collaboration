@@ -269,9 +269,10 @@
     position: relative;
     padding: 18rem 2rem;
     display: flex;
-    gap: 2rem 0;
+    gap: 4rem 0;
     overflow-x: hidden;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .third-content-wrappers > .third-content-texts {
@@ -507,9 +508,10 @@
 
 .items {
     position: relative;
-    right: -8rem;
     height: 350px;
     width: 800px;
+    margin: 0 auto;
+    display: flex;
 }
 
 .items .item {
@@ -640,7 +642,7 @@
 
 .fourth-content .fourth-content-slider {
     color: #fff;
-    height: 800px;
+    height: fit-content;
     width: 100%;
     z-index: 0;
     /* position: absolute; */
@@ -738,3 +740,7 @@
 /* .container, .second-content, .third-content, .fourth-content {
     overflow-x: hidden;
 } */
+
+.fourth-content-slider {
+    overflow-x: hidden;
+}

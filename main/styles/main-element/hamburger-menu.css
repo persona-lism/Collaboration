@@ -27,24 +27,30 @@
     padding: 0 2rem;
     flex-direction: column;
     font-size: 1rem;
+    text-align: right;
 }
 
 .hamburger-content > a {
     text-decoration: none;
     color: #fff;
+    position: relative;
+    cursor: pointer;
 }
 
 .hamburger-content > a::after {
-    display: block;
+    display: inline-block;
     content: '';
     /* border-bottom: solid 4px #019fb6;  */
     border-bottom: solid 4px lightcoral;
     width: 0;
-    transition: width 800ms ease-in-out;
+    position: absolute;
+    transition: width 500ms ease, left 500ms ease;
+    left: 100%;
 }
  
 .hamburger-content > a:hover::after {
     width: 100%;
+    left: 0;
 }
 
 .hamburger-content > a:nth-child(1) {
