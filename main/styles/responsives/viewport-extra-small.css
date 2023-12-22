@@ -91,13 +91,13 @@
 /* FIRST CONTENT - Explore Indonesia Content */
 .explore-indonesia-content > .explore-indonesia-title > #explore {
     font-size: 1.75em;
-    /* letter-spacing: 0.3rem; */
+    letter-spacing: 0.3rem;
 }
 
 .explore-indonesia-content > .explore-indonesia-title > #indonesia {
     font-size: 2.65em;
-    /* letter-spacing: 0.9rem;
-    margin-right: -0.9rem; */
+    letter-spacing: 0.9rem;
+    margin-right: -0.9rem;
 }
 
 /* SECOND CONTENT - Container */
@@ -144,7 +144,7 @@
     top: 45%;
     left: -15%;
     opacity: 0.25;
-    scale: 0.8;
+    scale: 0.6;
     z-index: -101;
 }
 
