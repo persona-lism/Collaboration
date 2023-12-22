@@ -5,7 +5,9 @@ body {
 * {
     /* border: 1px white solid; */
 }
-
+.news-container {
+    padding: 0 0 5rem 0;
+}
 .second-content {
     display: flex;
     flex-direction: row-reverse;

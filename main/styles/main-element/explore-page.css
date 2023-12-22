@@ -542,7 +542,6 @@ body {
 
 /* add classlist */
 .container-explore .main-content-2 .first-content-explore-2 .first-explore-content-bottom-2 .active2 { 
-<<<<<<< HEAD
     display: flex;
     justify-content: space-around;
     width: 1000px;
@@ -558,7 +557,6 @@ body {
 .container-explore .main-content-2 .first-content-explore-2 .first-explore-content-bottom-2 .image-slider-container-first-2 .actives-2 {
     opacity: 1;
 }
-
 
 
 
@@ -798,8 +796,6 @@ body {
 
 /* add classlist */
 .container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 .active3 { 
-=======
->>>>>>> 9f965978486404eb91ff2d02d531ada77e62a88f
     display: flex;
     justify-content: space-around;
     width: 800px;

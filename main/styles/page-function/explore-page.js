@@ -101,17 +101,20 @@ const BigTitle = document.querySelector("#TitleExploreFirst");
 const Description = document.querySelector("#DescriptionExploreFirst");
 const paragraph = document.querySelector(".image-cont-first span");
 
+
 all.addEventListener("click", function () {
   imgContainer.style.overflow = "visible";
   imgContainer.classList.add("active1");
   less.style.marginTop = "12em";
 
+
   imgContents.forEach((imgContent) => {
     imgContent.style.opacity = 1;
     imgContent.style.cursor = "pointer";
 
+
     imgContent.addEventListener("click", function () {
-      const currentIndex = parseInt(this.querySelector("p").innerText) - 1;
+      const currentIndex = parseInt(imgContent.querySelector("p").innerText) - 1;
       imgBig.src = getImagePath(currentIndex);
       paragraph.innerText = getTitle(currentIndex);
       BigTitle.innerText = getTitle(currentIndex);
@@ -135,9 +138,7 @@ less.addEventListener("click", function () {
     imgContainer.classList.remove("active1");
 
     imgContents.forEach((imgContent) => {
-      imgContent.style.opacity = imgContent.classList.contains("actives")
-        ? 1
-        : 0.5;
+      imgContent.style.opacity = imgContent.classList.contains("actives")? 1 : 0.5;
     });
 
     document.querySelector(".button-explore-slider").style.display = "flex";
@@ -149,11 +150,16 @@ less.addEventListener("click", function () {
   }
 });
 
+
+
+
+
+
+
+
 // Art & Music
 function changeImage2(step2) {
-  const imgContainer2 = document.querySelector(
-    ".image-slider-container-first-2"
-  );
+  const imgContainer2 = document.querySelector(".image-slider-container-first-2");
   const imgContents2 = imgContainer2.querySelectorAll(".image-cont-first-2");
   const imgBig2 = document.querySelector("#FirstImgExplore-2");
   const BigTitle2 = document.querySelector("#TitleExploreFirst-2");

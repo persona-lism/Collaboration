@@ -37,6 +37,16 @@
     list-style-type: none;
 }
 
+.footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: .4s ease;
+}
+
+.footer a:hover {
+    color: gray;
+}
+
 .footer-copyright::before {
     border: 1px #fff solid;
     content: '';
@@ -47,6 +57,18 @@
 .footer-copyright > p {
     margin: 12px 0 6px 0;
     text-align: left;
+}
+
+.footer-title-main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: end;
+    gap: 0.5rem;
+}
+
+.footer-title-main > img {
+    width: 15%;
 }
 
 .footer-menu > ul,
