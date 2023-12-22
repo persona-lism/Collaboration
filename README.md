@@ -1,4 +1,5 @@
 ## **INDONESIA SPACE**
+Mohon dibaca untuk informasinya.
 
 ## Pages Information
 1. **Halaman Utama [ index ](https://persona-lism.github.io/Collaboration/)** <br>
@@ -14,5 +15,5 @@
    Terdapat halaman news yang mencakup berita-berita tentang budaya Indonesia secara terkini. <br>
 
 ## Note
-Mengakses sub-konten/kategori, bisa melalui footer yang berada pada bagian bawah yang ada di setiap halaman atau melalui link yang telah dilampirkan pada nomor 2.
-
+Mengakses sub-konten/kategori, bisa melalui footer yang berada pada bagian bawah yang ada di setiap halaman atau melalui link yang telah dilampirkan pada nomor 2. <br>
+Beberapa fungsi bekerja, namun ada juga beberapa yang tidak bekerja (hanya tampilannya saja).
