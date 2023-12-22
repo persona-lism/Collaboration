@@ -355,3 +355,90 @@
 .tradition-synopsis {
     font-size: 0.9rem;
 }
+
+/* CUISINE PAGE */
+.cuisine-main-background-texts > h1 {
+    font-size: 3rem;
+}
+
+.cuisine-main-background-texts > h3 {
+    font-size: 1.3rem;
+}
+
+.cuisine-synopsis {
+    padding: 1rem 2rem;
+}
+
+.cuisine-synopsis > img {
+    width: 30%;
+    max-width: 150px;
+}
+
+.cuisine-synopsis > p {
+    font-size: 1rem;
+    padding: 0 1rem;
+    width: 70%;
+}
+
+.cuisine-wrapper {
+    padding: 8rem 2.5rem 3rem 2.5rem;
+    gap: 1rem;
+    font-size: 1rem;
+}
+
+.cuisine-wrapper > .cuisine-wrapper-first,
+.cuisine-wrapper > .cuisine-wrapper-second {
+    width: 55%;
+    padding: 6rem 1rem 1.5rem 1rem;
+}
+
+.cuisine-description-texts {
+    padding: 1.5rem 1rem;
+}
+
+.cuisine-description-texts > h1 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.cuisine-description-texts > p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.cuisine-video {
+    padding: 2rem 3rem;
+}
+
+/* GAMES PAGE */
+.games-main-background-texts > h1 {
+    font-size: 3rem;
+}
+
+.game-synopsis {
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+}
+
+.games-wrapper {
+    padding: 0.5rem 1rem;
+}
+
+.games-wrapper-texts {
+    padding: 1rem 2rem;
+    margin: auto 0 auto -1rem;
+    max-width: 300px;
+    font-size: 0.9rem;
+}
+
+.games-wrapper-texts > h1 {
+    font-size: 1.3rem;
+}
+
+.games-wrapper > .games-wrapper-thumbnail {
+    width: 50%;
+}
+
+.games-video {
+    padding: 2rem 3rem;
+}
