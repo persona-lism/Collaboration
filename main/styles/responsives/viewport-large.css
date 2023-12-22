@@ -144,3 +144,74 @@
 .news-content-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
+
+/* EXIT BAR NAVIGATION */
+.exit-bar {
+    padding: 0.5rem 1rem;
+}
+
+.exit-bar > .exit-bar-content {
+    padding: 1.25rem 0.5rem;
+    gap: 1rem;
+}
+
+.exit-bar > .exit-bar-content > a {
+    padding: 1.5rem;
+}
+
+/* TRADITION PAGE */
+.tradition-main-background-texts > h1 {
+    font-size: 6rem;
+}
+
+.tradition-main-background-texts > h3 {
+    font-size: 2rem;
+}
+
+.tradition-thumbnail > h1 {
+    font-size: 4rem;
+}
+
+/* CUISINE PAGE */
+.cuisine-main-background-texts > h1 {
+    font-size: 6rem;
+}
+
+.cuisine-main-background-texts > h3 {
+    font-size: 2rem;
+}
+
+.cuisine-synopsis {
+    padding: 1.3rem 2.3rem;
+}
+
+.cuisine-synopsis > p {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+}
+
+.cuisine-wrapper {
+    padding: 12rem 2.5rem 3rem 2.5rem;
+    gap: 4rem;
+    font-size: 1.3rem;
+}
+
+.cuisine-wrapper > .cuisine-wrapper-first,
+.cuisine-wrapper > .cuisine-wrapper-second {
+    width: 30%;
+    padding: 10rem 1.5rem 2rem 1.5rem;
+}
+
+.cuisine-description-texts {
+    padding: 3rem 1.5rem;
+}
+
+.cuisine-description-texts > h1 {
+    margin: 0.5rem 0;
+    font-size: 2.3rem;
+}
+
+.cuisine-description-texts > p {
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+}

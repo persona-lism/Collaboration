@@ -1,0 +1,110 @@
+.games-container {
+    width: 100%;
+    left: 0;
+    margin: 0;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.games-container > .games-main-background {
+    width: 100%;
+    height: fit-content;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    position: relative;
+}
+
+.games-container > .games-main-background > img {
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.games-container > .games-main-background > .games-main-background-texts {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.games-main-background-texts > h1 {
+    font-size: 8rem;
+    color: #ffd700;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.games-synopsis {
+    display: flex;
+    padding: 1.5rem 2.5rem;
+    background-color: #222;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.games-wrapper {
+    /* width: 100%; */
+    background-color: #222;
+    padding: 1.5rem 2.5rem;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: start;
+}
+
+.games-wrapper-texts {
+    background-color: #7d371a;
+    width: 50%;
+    height: 50%;
+    padding: 1rem 2rem;
+    margin: auto 0 auto -5rem;
+    z-index: 1;
+    display: block;
+    max-width: 540px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.games-wrapper-texts > h1 {
+    font-size: 1.8rem;
+    color: #ffd700;
+}
+
+.games-wrapper > .games-wrapper-thumbnail {
+    width: 40%;
+}
+
+.games-wrapper > .games-wrapper-thumbnail > img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: 100%;
+    right: 0;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.games-video {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    padding: 2rem 6rem;
+    background-color: #222;
+}
+
+.games-video > iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}

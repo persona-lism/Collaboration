@@ -152,3 +152,50 @@ body {
    font-size: 1.2rem;
    padding: 12px;
 }
+
+/* EXIT BAR NAVIGATION */
+.exit-bar {
+   position: absolute;
+   z-index: 1;
+   top: 0;
+   padding: 1rem 2rem;
+}
+
+.exit-bar > .exit-bar-content {
+   width: auto;
+   height: 4rem;
+   display: flex;
+   background-color: #222;
+   padding: 2.5rem 1rem; 
+   align-items: center;
+   justify-content: center;
+   border-radius: 3rem;
+   gap: 2rem;
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.exit-bar > .exit-bar-content > a {
+   font-size: 2rem;
+   color: #fff;
+   background-color: #333;
+   padding: 2rem;
+   border-radius: 50%;
+   aspect-ratio: 1 / 1;
+   position: relative;
+   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+   transition: .4s ease;
+   text-decoration: none;
+}
+
+.exit-bar > .exit-bar-content > a > i {
+   margin: auto;
+   position: absolute;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+}
+
+.exit-bar > .exit-bar-content > a:hover {
+   background-color: #444;
+   color: #222;
+}

@@ -302,3 +302,56 @@
 .news-content-top-post-description > .news-content-top-post-index {
     padding: 0.5rem;
 }
+
+/* EXIT BAR NAVIGATION */
+.exit-bar {
+    padding: 0.3rem 0.8rem;
+}
+
+.exit-bar > .exit-bar-content {
+    padding: 0.25rem 0.5rem;
+    gap: 0.25rem;
+    height: 3rem;
+}
+
+.exit-bar > .exit-bar-content > a {
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+/* TRADITION PAGE */
+.tradition-main-background-texts > h1 {
+    font-size: 3rem;
+}
+
+.tradition-main-background-texts > h3 {
+    font-size: 1.2rem;
+}
+
+.tradition-thumbnail > h1 {
+    font-size: 2rem;
+}
+
+.tradition-description {
+    padding: 1rem 2rem;
+}
+
+.tradition-description > p {
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.tradition-wrapper-texts {
+    padding: 0.5rem 1rem;
+    margin: auto 0 auto 0;
+    font-size: 0.9rem;
+}
+
+.tradition-video {
+    padding: 1rem 3rem;
+}
+
+.tradition-synopsis {
+    font-size: 0.9rem;
+}

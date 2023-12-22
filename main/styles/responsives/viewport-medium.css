@@ -255,3 +255,30 @@
 .news-content-top-post-description > .news-content-top-post-index {
     padding: 0.8rem;
 }
+
+/* EXIT BAR NAVIGATION */
+.exit-bar {
+    padding: 0.5rem 1rem;
+}
+
+.exit-bar > .exit-bar-content {
+    padding: 1.25rem 0.5rem;
+    gap: 1rem;
+}
+
+.exit-bar > .exit-bar-content > a {
+    padding: 1.5rem;
+}
+
+/* TRADITION PAGE */
+.tradition-main-background-texts > h1 {
+    font-size: 5rem;
+}
+
+.tradition-main-background-texts > h3 {
+    font-size: 1.8rem;
+}
+
+.tradition-thumbnail > h1 {
+    font-size: 4rem;
+}
