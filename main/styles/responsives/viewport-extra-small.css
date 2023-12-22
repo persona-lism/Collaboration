@@ -30,6 +30,10 @@
     font-size: 1rem;
 }
 
+.navigation > .search-bar-content {
+    min-width: 200px;
+}
+
 /* HAMBURGER MENU */
 .hamburger-menu {
     display: flex;
@@ -140,7 +144,7 @@
     top: 45%;
     left: -15%;
     opacity: 0.25;
-    scale: 0.8;
+    scale: 0.6;
     z-index: -101;
 }
 
@@ -237,4 +241,64 @@
 
 .fourth-content .fourth-content-slider .button-fourth-content > button i {
     font-size: 3em;
+}
+
+/* NEWS - Container */
+.second-content {
+    flex-direction: column;
+}
+
+.news-content-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 80%;
+    margin: 0 auto;
+}
+
+.second-content-first-content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.news-h1 {
+    font-size: 1.4rem;
+}
+
+.news-content-top-post-description h3 {
+    font-size: 0.8rem;
+}
+
+.news-content-top-post-description p {
+    font-size: 0.8rem;
+}
+
+.news-content-top-post-description > .news-content-top-post-index {
+    font-size: 1.6rem;
+}
+
+.news-content-top-post > h1 {
+    font-size: 1.4rem;
+}
+
+.highlighted-post h2 {
+    font-size: 0.9rem;
+}
+
+.highlighted-post > .highlighted-post-description {
+    padding-bottom: 1.3rem;
+}
+
+.news-content-description {
+    font-size: 0.6rem;
+}
+
+.news-content-top-post {
+    padding: 0.5rem 1rem;
+}
+
+.news-content-top-post-description {
+    margin: 0.5rem;
+}
+
+.news-content-top-post-description > .news-content-top-post-index {
+    padding: 0.5rem;
 }
