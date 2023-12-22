@@ -5,7 +5,6 @@
     display: block;
     flex-direction: column;
     justify-content: end;
-    overflow-x: hidden;
 }
 
 
@@ -13,14 +12,14 @@
     color: white;
     font-size: 5.5em;
     text-shadow: -2.5px 2.5px 5px black;
-    letter-spacing: 0.8rem;
+    /* letter-spacing: 0.8rem; */
     font-family: 'Great Vibes';
 }
 
 .explore-indonesia-content > .explore-indonesia-title > #indonesia {
     font-size: 6.3em;
-    letter-spacing: 2.8rem;
-    margin-right: -2.8rem;
+    /* letter-spacing: 2.8rem; */
+    /* margin-right: -2.8rem; */
     text-shadow: 2.5px 2.5px 5px black;
     font-family: Blanka;
     color: white;
