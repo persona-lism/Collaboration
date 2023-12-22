@@ -79,12 +79,12 @@ function getTitle(indeks) {
 function getDesc(indek) {
   const deskripsi = [
     "Makanan tradisional khas orang Melayu Sambas dari Kalimantan Barat. Terbuat dari beras yang ditumbuk halus, bubur ini disajikan dalam bentuk sejenis bubur dengan campuran rempah dan sayuran",
-    "Sate lilit adalah salah satu sate khas Bali yang berbeda dari sate pada umumnya. Sate lilit awalnya berasal dari Klungkung, salah satu kabupaten di Bali.. Sate ini terbuat dari daging cincang yang dicampur dengan bumbu genep dan parutan kelapa.\n\n Sate lilit dililitkan pada batang serai atau bambu. Sate lilit memiliki rasa gurih dan pedas yang khas, serta aroma yang menggugah selera.",
-    "Hidangan khas suku Banjar di Kalimantan Selatan. Soto ini terbuat dari daging ayam yang dimasak dengan kuah gurih yang khas.\n\nAromanya yang harum, dihasilkan oleh rempah-rempah seperti kayu manis, biji pala, dan cengkeh Soto Banjar terkenal karena rasa kuahnya yang gurih.",
+    "Sate lilit adalah salah satu sate khas Bali yang berbeda dari sate pada umumnya. Sate lilit awalnya berasal dari Klungkung, salah satu kabupaten di Bali.. Sate ini terbuat dari daging cincang yang dicampur dengan bumbu genep dan parutan kelapa. Sate lilit dililitkan pada batang serai atau bambu. Sate lilit memiliki rasa gurih dan pedas yang khas, serta aroma yang menggugah selera.",
+    "Hidangan khas suku Banjar di Kalimantan Selatan. Soto ini terbuat dari daging ayam yang dimasak dengan kuah gurih yang khas. Aromanya yang harum, dihasilkan oleh rempah-rempah seperti kayu manis, biji pala, dan cengkeh Soto Banjar terkenal karena rasa kuahnya yang gurih.",
     "Makanan khas Palembang yang terbuat dari adonan tepung sagu, ikan tenggiri, dan beberapa bahan lainnya yang disajikan bersama kuah cuko",
-    "Hidangan khas Indonesia, terutama berasal dari Yogyakarta dan Jawa Tengah.\n\nHidangan ini terbuat dari nangka muda yang dimasak dalam santan dan gula merah, memberikan rasa manis khas. Gudeg biasanya disajikan dengan nasi, ayam, telur, sambal, dan krecek.",
-    "Masakan mie pedas khas Aceh, Indonesia. Mie ini memiliki ciri khas berupa mi kuning tebal yang disajikan dengan irisan daging sapi, daging kambing, atau makanan laut seperti udang dan cumi.\n\nMie Aceh dikenal sebagai sajian yang hanyut dalam racikan bumbu yang tajam dan kaya rempah",
-    "Hidangan tradisional Indonesia yang berasal dari Bandung, Jawa Barat.\n\nHidangan ini terkenal dengan rasa pedas dan gurih. Seblak umumnya terbuat dari berbagai bahan dimasak bersama dengan bumbu pedas yang khas, seperti cabai, bawang, dan berbagai rempah-rempah.",
+    "Hidangan khas Indonesia, terutama berasal dari Yogyakarta dan Jawa Tengah. Hidangan ini terbuat dari nangka muda yang dimasak dalam santan dan gula merah, memberikan rasa manis khas. Gudeg biasanya disajikan dengan nasi, ayam, telur, sambal, dan krecek.",
+    "Masakan mie pedas khas Aceh, Indonesia. Mie ini memiliki ciri khas berupa mi kuning tebal yang disajikan dengan irisan daging sapi, daging kambing, atau makanan laut seperti udang dan cumi. Mie Aceh dikenal sebagai sajian yang hanyut dalam racikan bumbu yang tajam dan kaya rempah",
+    "Hidangan tradisional Indonesia yang berasal dari Bandung, Jawa Barat. Hidangan ini terkenal dengan rasa pedas dan gurih. Seblak umumnya terbuat dari berbagai bahan dimasak bersama dengan bumbu pedas yang khas, seperti cabai, bawang, dan berbagai rempah-rempah.",
     "Makanan yang dibuat dari aneka bumbu, rempah, dan potongan daging sapi. Salah satu rempah yang digunakan untuk membuat rawon adalah kluwek atau keluak.Rempah hitam ini merupakan ciri khas utama rawon",
   ];
   return deskripsi[indek];
@@ -138,7 +138,7 @@ less.addEventListener("click", function () {
     imgContainer.classList.remove("active1");
 
     imgContents.forEach((imgContent) => {
-      imgContent.style.opacity = imgContent.classList.contains("actives")? 1 : 0.5;
+      imgContent.style.opacity = imgContent.classList.contains("actives") ? 1 : 0.5;
     });
 
     document.querySelector(".button-explore-slider").style.display = "flex";
@@ -165,7 +165,7 @@ function changeImage2(step2) {
   const BigTitle2 = document.querySelector("#TitleExploreFirst-2");
   const Description2 = document.querySelector("#DescriptionExploreFirst-2");
 
-  imgContents22.forEach((imgContent2) => {
+  imgContents2.forEach((imgContent2) => {
     const imgSmall2 = imgContent2.querySelector(".img-dlm-2 img");
     const span2 = imgContent2.querySelector(".p-2");
     const paragraph2 = imgContent2.querySelector(".span-2");
@@ -264,15 +264,14 @@ const paragraph2 = document.querySelector(".image-cont-first-2 span");
 all2.addEventListener("click", function () {
   imgContainer2.style.overflow = "visible";
   imgContainer2.classList.add("active2");
-  less2.style.marginTop = "12em";
+  less2.style.marginTop = "19.5em";
 
   imgContents2.forEach((imgContent) => {
     imgContent.style.opacity = 1;
     imgContent.style.cursor = "pointer";
 
     imgContent.addEventListener("click", function () {
-      const currentIndex2 =
-        parseInt(imgContent.querySelector(".p-2").innerText) - 1;
+      const currentIndex2 = parseInt(imgContent.querySelector(".p-2").innerText) - 1;
       imgBig2.src = getImagePath(currentIndex2);
       paragraph2.innerText = getTitle(currentIndex2);
       BigTitle2.innerText = getTitle(currentIndex2);
@@ -289,16 +288,14 @@ all2.addEventListener("click", function () {
 });
 
 less2.addEventListener("click", function () {
-  const imgContents2 = imgContainer2.querySelectorAll(".image-cont-first");
+  const imgContents2 = imgContainer2.querySelectorAll(".image-cont-first-2");
 
   if (isExpanded2) {
     imgContainer2.style.overflow = "hidden";
     imgContainer2.classList.remove("active2");
 
     imgContents2.forEach((imgContent) => {
-      imgContent.style.opacity = imgContent.classList.contains("actives-2")
-        ? 1
-        : 0.5;
+      imgContent.style.opacity = imgContent.classList.contains("actives-2") ? 1 : 0.5;
     });
 
     document.querySelector(".button-explore-slider-2").style.display = "flex";
@@ -307,5 +304,147 @@ less2.addEventListener("click", function () {
     less2.style.display = "none";
 
     isExpanded2 = false;
+  }
+});
+
+
+
+
+
+
+
+// Games
+
+function changeImage3(step) {
+  const imgContainer3 = document.querySelector(".image-slider-container-first-3");
+  const imgContents3 = imgContainer3.querySelectorAll(".image-cont-first-3");
+  const imgBig3 = document.querySelector("#FirstImgExplore-3");
+  const BigTitle3 = document.querySelector("#TitleExploreFirst-3");
+  const Description3 = document.querySelector("#DescriptionExploreFirst-3");
+
+  imgContents3.forEach((imgContent) => {
+    const imgSmall3 = imgContent.querySelector(".img-dlm-3 img");
+    const span3 = imgContent.querySelector(".p-3");
+    const paragraph3 = imgContent.querySelector(".span-3");
+
+    let currentIndex3 = parseInt(span3.innerText) - 1;
+    currentIndex3 = (currentIndex3 + step + imgContents3.length) % imgContents3.length;
+
+    span3.innerText = currentIndex3 + 1;
+    imgSmall3.src = getImagePath3(currentIndex3);
+
+    let nextIndex3 = (currentIndex3 + 2) % imgContents3.length;
+    let prevIndex3 = (currentIndex3 - 6 + imgContents3.length) % imgContents3.length;
+
+    if (step > 0) {
+      imgBig3.src = getImagePath3(nextIndex3);
+      paragraph3.innerText = getTitle3(currentIndex3);
+      BigTitle3.innerText = getTitle3((currentIndex3 + step + imgContents3.length + 1) % imgContents3.length);
+      Description3.innerText = getDesc3((currentIndex3 + step + imgContents3.length + 1) % imgContents3.length);
+    } else if (step < 0) {
+      imgBig3.src = getImagePath3(prevIndex3);
+      paragraph3.innerText = getTitle3(currentIndex3);
+      BigTitle3.innerText = getTitle3((currentIndex3 - 6 + imgContents3.length) % imgContents3.length);
+      Description3.innerText = getDesc3((currentIndex3 - 6 + imgContents3.length) % imgContents3.length);
+    }
+  });
+}
+
+function getImagePath3(index) {
+  const imagePath3 = [
+    "../main/styles/assets/20231222_214822_0000.png",
+    "../main/styles/assets/explore rangku alu_20231222_214130_0000.png",
+    "../main/styles/assets/20231222_214748_0000.png",
+    "../main/styles/assets/20231222_214839_0000.png",
+    "../main/styles/assets/20231222_214932_0000.png",
+    "../main/styles/assets/20231222_214904_0000.png",
+    "../main/styles/assets/20231222_214944_0000.png",
+  ];
+  return imagePath3[index];
+}
+
+function getTitle3(indeks) {
+  const titleText3 = [
+    "Congklak",
+    "Rangku Alu",
+    "Egrang",
+    "Permainan gundu",
+    "Permainan karet gelang",
+    "Gasing",
+    "Injit-injit semut",
+  ];
+  return titleText3[indeks];
+}
+
+function getDesc3(indek) {
+  const deskripsi3 = [
+    "Congklak adalah permainan tradisional yang kuno dan dikenal dengan berbagai nama di seluruh Indonesia. Permainan ini umumnya menggunakan papan berlubang yang terbuat dari kayu atau bahan lainnya. Lubang-lubang pada papan mewakili tempat untuk meletakkan biji atau batu sebagai permainan.",
+    "Rangku Alu adalah permainan tradisional yang berasal dari Manggarai, Flores, Nusa Tenggara Timur. Permainan ini menggunakan alat berupa batang bambu dan melibatkan lompatan-lompatan sebagai bagian dari cara bermainnya. Selain menyenangkan, Rangku Alu juga memiliki nilai edukasi, melatih ketangkasan, dan meningkatkan konsentrasi pemain. Alat utama permainan ini adalah batang bambu, dan sering dimainkan pada bulan purnama sebagai bentuk rasa syukur dan bahagia.",
+    "Egrang adalah sebuah permainan tradisional berasal dari Jawa Barat yang menggunakan sepasang bambu untuk berjalan. Bambu dibentuk seperti tongkat yang memiliki tumpuan kaki yang terbuat dari kayu.",
+    "Permainan gundu, juga dikenal sebagai permainan kelereng, adalah salah satu jenis permainan tradisional di Indonesia. Permainan ini sangat diminati oleh laki-laki.",
+    "Permainan karet gelang adalah permainan tradisional yang melibatkan penggunaan gelang karet yang dikepang menjadi tali sebagai alat utama. Kita harus melompati atau menghindari tali karet gelang yang ditarik oleh pemain.",
+    "Gasing, merupakan mainan tradisional yang telah bertahan selama berabad-abad dan memiliki akar budaya yang kuat di berbagai masyarakat. Gasing adalah mainan yang dirancang untuk berputar pada porosnya dan mencapai keseimbangan pada suatu titik tertentu.",
+    "Injit-injit semut adalah Permainan ini bisa dimainkan dua orang atau lebih. Ini akan membuat anak-anak merasa sakit, lucu, dan ingin berada paling atas.",
+  ];
+  return deskripsi3[indek];
+}
+
+let isExpanded3 = false;
+const all3 = document.querySelector(".showall-3");
+const less3 = document.querySelector(".showless-3");
+
+const imgContainer3 = document.querySelector(".image-slider-container-first-3");
+const imgContents3 = imgContainer3.querySelectorAll(".image-cont-first-3");
+const imgBig3 = document.querySelector("#FirstImgExplore-3");
+const BigTitle3 = document.querySelector("#TitleExploreFirst-3");
+const Description3 = document.querySelector("#DescriptionExploreFirst-3");
+const paragraph3 = document.querySelector(".image-cont-first-3 span");
+
+
+all3.addEventListener("click", function () {
+  imgContainer3.style.overflow = "visible";
+  imgContainer3.classList.add("active3");
+  less3.style.marginTop = "28em";
+
+
+  imgContents3.forEach((imgContent3) => {
+    imgContent3.style.opacity = 1;
+    imgContent3.style.cursor = "pointer";
+
+
+    imgContent3.addEventListener("click", function () {
+      const currentIndex3 = parseInt(imgContent3.querySelector("p").innerText) - 1;
+      imgBig3.src = getImagePath3(currentIndex3);
+      paragraph3.innerText = getTitle3(currentIndex3);
+      BigTitle3.innerText = getTitle3(currentIndex3);
+      Description3.innerHTML = getDesc3(currentIndex3);
+    });
+  });
+
+  document.querySelector(".button-explore-slider-3").style.display = "none";
+
+  all3.style.display = "none";
+  less3.style.display = "block";
+
+  isExpanded3 = true;
+});
+
+less3.addEventListener("click", function () {
+  const imgContents3 = imgContainer3.querySelectorAll(".image-cont-first-3");
+
+  if (isExpanded3) {
+    imgContainer3.style.overflow = "hidden";
+    imgContainer3.classList.remove("active3");
+
+    imgContents3.forEach((imgContent3) => {
+      imgContent3.style.opacity = imgContent3.classList.contains("actives-3") ? 1 : 0.5;
+    });
+
+    document.querySelector(".button-explore-slider-3").style.display = "flex";
+
+    all3.style.display = "block";
+    less3.style.display = "none";
+
+    isExpanded3 = false;
   }
 });

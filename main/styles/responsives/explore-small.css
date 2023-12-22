@@ -86,8 +86,18 @@
 }
 
 /* Cuisine */
+.container-explore .main-content {
+    height: 1700px;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-top {
+    display: flex;
+    flex-direction: column;
+}
+
 .container-explore .main-content .first-content-explore {
     margin-top: 7rem;
+    align-items: center;
 }
 
 .container-explore .main-content .first-content-explore .circle {
@@ -95,6 +105,83 @@
 }
 
 .container-explore .main-content .first-content-explore .first-explore-content-top .first-photo-explore img {
-    height : 250px;
-    width : 260px;
+    height : 380px;
+    width : 390px;
+    left: 50%;
 }
+
+.container-explore .main-content .first-content-explore .first-explore-content-top .first-title-explore {
+    height: 100px;
+    flex: 0 0 100px;
+    /* margin-left: 1px; */
+    text-align: center;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-top .first-title-explore h1 {
+    font-size: 2.5em;
+    color: #ffd700;
+    text-transform: uppercase;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-top .first-description-explore {
+    background-color: #17457a;
+    width: 420px;
+    height: 100px;
+    padding: 36px;
+    border-radius: 15%;
+    /* margin-right: 15px; */
+    margin-left: 10px;
+}
+
+/* bottom */
+.container-explore .main-content .first-content-explore .first-explore-content-bottom .image-slider-container-first {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    width: 600px;
+    height: 170px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+    margin-top: 7rem;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-bottom .image-slider-container-first .image-cont-first {
+    opacity: 0;
+}
+
+
+/* button */
+.container-explore .main-content .first-content-explore .first-explore-content-bottom .button-explore-slider {
+    position: absolute;
+    top: 8rem;
+    transform: translateX(-50%,-50%);
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-bottom > .showall {
+    padding: 8px 24px;
+    text-align: center; 
+    width: 120px;
+    margin-top: 7rem;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-bottom > .side-text {
+    display: none;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-bottom .active1 { 
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    height: 550px;
+    transform: translate(-50%,-50%);
+    position: relative;
+    left: 50%;
+    flex-wrap: wrap;
+    margin-top: 20em;
+} 
