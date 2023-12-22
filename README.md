@@ -1,25 +1,18 @@
-## **BORNEO SPACE**
-Merupakan sebuah projek berupa pembangunan [_website_](https://youtube.com/) yang bertemakan tentang budaya.
+## **INDONESIA SPACE**
 
-## About
-Website ini dibangun oleh..
+## Pages Information
+1. **Halaman Utama [ index ] (https://persona-lism.github.io/Collaboration/)** <br>
+   Terdapat halaman utama untuk menunjukkan
 
-## Showcases
-1. **Light/Dark Mode Switch** <br>
-   Terdapat saklar mode terang/gelap yang dapat mengalihkan tampilan menjadi terang/gelap.
+2. **Halaman Explore [ explore ] (https://persona-lism.github.io/Collaboration/main/explore.html)** <br>
+   Terdapat halaman explore yang mencakup semua isi dari sub-konten/kategori.
+   Kuliner/Cuisine - (https://persona-lism.github.io/Collaboration/main/cuisine-page.html)
+   Tradisi/Tradition - (https://persona-lism.github.io/Collaboration/main/tradition-page.html)
+   Permainan/Games - (https://persona-lism.github.io/Collaboration/main/games-page.html)
 
-2. **Parallax Scrolling Effect**<br>
-   Terdapat efek _parallax_ pada bagian latar [_website_]() yang bertujuan untuk meningkatkan pengalaman pembaca, menciptakan tampilan yang menarik secara visual, menunjukkan nilai estetika, dan menonjolkan konten utama pada halaman web.
+3. **Halaman News [ news ] (https://persona-lism.github.io/Collaboration/main/news.html)** <br>
+   Terdapat halaman news yang mencakup berita-berita tentang budaya Indonesia secara terkini.
 
-3. **Scroll Indicator** <br>
-   Terdapat indikator gulir yang memiliki tujuan untuk memberi indikasi terhadap sejauh mana pembaca telah menggulir halaman.
+## Note
+Mengakses sub-konten/kategori, bisa melalui footer yang berada pada bagian bawah yang ada di setiap halaman.
 
-4. **Coming soon..** <br>
-   Lorem ipsum.
-
-## Roadmap
-- [ ] 💡 Light/Dark Mode <br>
-- [ ] 😲 Parallax Scrolling Effect <br>
-- [ ] 📜 Scroll Indicator 
-
-## Contact
