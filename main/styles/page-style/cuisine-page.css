@@ -1,0 +1,251 @@
+.cuisine-container {
+    width: 100%;
+    left: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.cuisine-container > .cuisine-main-background {
+    width: 100%;
+    height: fit-content;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    position: relative;
+}
+
+.cuisine-container > .cuisine-main-background > img {
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.cuisine-container > .cuisine-main-background > .cuisine-main-background-texts {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.cuisine-main-background-texts > h1 {
+    font-size: 8rem;
+    color: #ffd700;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    margin: 0;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.cuisine-main-background-texts > h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+}
+
+.cuisine-synopsis {
+    display: flex;
+    padding: 1.5rem 2.5rem;
+    background-color: #7d371a;
+    align-items: center;
+    justify-content: center;
+}
+
+.cuisine-synopsis > img {
+    object-fit: contain;
+    height: auto;
+    background-position: center;
+    background-size: contain;
+    flex: 1;
+}
+
+.cuisine-synopsis > p {
+    height: 100%;
+    padding: 0 1rem;
+    width: 100%;
+    color: #fff;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    flex: 1;
+}
+
+.cuisine-wrapper {
+    background-color: #cecbc5;
+    display: flex;
+    flex-direction: row;
+    padding: 12rem 2.5rem 3rem 2.5rem;
+    justify-content: center;
+    gap: 5rem;
+    font-size: 1.3rem;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.cuisine-wrapper > .cuisine-wrapper-first {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-width: 300px;
+    background-color: #66694a;
+    position: relative;
+    padding: 10rem 1.5rem 2rem 1.5rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.cuisine-wrapper > .cuisine-wrapper-second {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-width: 300px;
+    background-color: #9c8d46;
+    position: relative;
+    padding: 10rem 1.5rem 2rem 1.5rem;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.cuisine-wrapper > .cuisine-wrapper-first > img,
+.cuisine-wrapper > .cuisine-wrapper-second > img {
+    width: 80%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+    z-index: 3;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 0;
+    left: 50%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.cuisine-description {
+    display: flex;
+    flex-direction: row;
+    background-color: #d19a40;
+    color: white;
+    text-align: center;
+}
+
+.cuisine-description-texts {
+    flex: 1;
+    padding: 3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    align-items: center;
+    justify-content: center;
+}
+
+.cuisine-description-texts > h1 {
+    margin: 0.5rem 0;
+    font-size: 2.3rem;
+}
+
+.cuisine-description-texts > p {
+    margin: 0.5rem 0;
+    font-size: 1.3rem;
+}
+
+.cuisine-description-image {
+    flex: 1;
+    display: flex;
+}
+
+.cuisine-description-image > img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+}
+
+.cuisine-video {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    padding: 2rem 6rem;
+    background-color: #cecbc5;
+}
+
+.cuisine-video > iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.cuisine-thumbnail {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0 0 6rem 0;
+    background-color: #cecbc5;
+}
+
+.cuisine-thumbnail > img {
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+    aspect-ratio: 4 / 3;
+}
+
+.cuisine-thumbnail > img:nth-child(1) {
+    animation: cuisineAnimation1 4s infinite ease-in-out;
+    grid-area: 1 / 1;
+}
+
+.cuisine-thumbnail > img:nth-child(2) {
+    animation: cuisineAnimation2 4s infinite ease-in-out;
+    grid-area: 1 / 2;
+}
+
+.cuisine-thumbnail > img:nth-child(3) {
+    animation: cuisineAnimation3 4s infinite ease-in-out;
+    grid-area: 1 / 3;
+}
+
+@keyframes cuisineAnimation1 {
+    0% {
+        grid-area: 1 / 1;
+    }
+    50% {
+        grid-area: 1 / 2;
+    }
+    100% {
+        grid-area: 1 / 3;
+    }
+}
+
+@keyframes cuisineAnimation2 {
+    0% {
+        grid-area: 1 / 2;
+    }
+    50% {
+        grid-area: 1 / 3;
+    }
+    100% {
+        grid-area: 1 / 1;
+    }
+}
+
+@keyframes cuisineAnimation3 {
+    0% {
+        grid-area: 1 / 3;
+    }
+    50% {
+        grid-area: 1 / 1;
+    }
+    100% {
+        grid-area: 1 / 2;
+    }
+}
