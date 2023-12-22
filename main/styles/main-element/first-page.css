@@ -6,8 +6,6 @@
     align-items: end;
 }
 
-* { border: 1px white solid;}
-
 .explore-indonesia-content > .explore-indonesia-title > #explore {
     color: white;
     font-size: 5.5em;
@@ -738,6 +736,15 @@
     border-radius: 50%;
     border: 2px solid #FFD700;
     cursor: pointer;
+    transition: .4s ease;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.fourth-content .fourth-content-slider .button-fourth-content > button:hover {
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    background: #252525;
+    background: #FFD111;
+    border: 2px solid #FFD111;
 }
 
 .fourth-content .fourth-content-slider .button-fourth-content > button i {

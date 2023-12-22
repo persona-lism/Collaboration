@@ -1,0 +1,100 @@
+/* NAVIGATION BAR */
+.navigation-bar nav > .logo {
+    margin-left: 1rem;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation-bar nav > .navigation ul {
+    gap: 1rem;
+}
+
+.navigation-bar nav > .logo > img {
+    transform: scale(1);
+}
+
+.navigation-bar nav > .navigation {
+    gap: 1rem;
+    margin: 0.5rem;
+}
+
+.navigation > .search-bar-content input {
+    font-size: 1rem;
+}
+
+.navigation > .search-bar-content i {
+    font-size: 1rem;
+}
+
+.navigation > .search-bar-content {
+    min-width: 200px;
+}
+
+/* HAMBURGER MENU */
+.hamburger-menu {
+    display: flex;
+}
+
+/* FOOTER */
+.footer-title {
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+
+.footer-main-content {
+    grid-area: 2 / 1 / span 1 / span 2;
+}
+
+.footer-copyright {
+    grid-area: 3 / 1 / span 1 / span 2;
+}
+
+.footer h1 {
+    font-size: 1.3rem;
+}
+
+.footer p, li {
+    font-size: 0.8rem;
+}
+
+.footer-menu li,
+.footer-category li,
+.footer-contact li {
+    margin: 2px 0;
+}
+
+.footer-menu ul,
+.footer-category ul,
+.footer-contact ul {
+    margin: 4px 0;
+}
+
+.footer-main-content {
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+}
+
+.footer-title > .subscribe-letter > input {
+    padding: 6px 14px;
+    font-size: 14px;
+}
+
+.footer-title > .subscribe-letter > .subscribe-button > a {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+
+/* Cuisine */
+.container-explore .main-content .first-content-explore {
+    margin-top: 7rem;
+}
+
+.container-explore .main-content .first-content-explore .circle {
+    display: none;
+}
+
+.container-explore .main-content .first-content-explore .first-explore-content-top .first-photo-explore img {
+    height : 250px;
+    width : 260px;
+}
