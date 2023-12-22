@@ -6,6 +6,8 @@
     align-items: end;
 }
 
+* { border: 1px white solid;}
+
 .explore-indonesia-content > .explore-indonesia-title > #explore {
     color: white;
     font-size: 5.5em;
