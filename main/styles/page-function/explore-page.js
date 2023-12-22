@@ -17,7 +17,7 @@ function changeImage(step) {
         // kedua: 3-1 = 2, 7 % 4 = (3) + 1 = 4
         // ketiga = 4-1 = 3, 8 % 4 = (0) + 1 = 1
         // keempat = 5-1 = 4 , 9 % 4 = (1) + 1 = 2
-       
+
 
         span.innerText = currentIndex + 1;
         imgSmall.src = getImagePath(currentIndex);
@@ -34,8 +34,8 @@ function changeImage(step) {
         } else if (step < 0) {
             imgBig.src = getImagePath(prevIndex);
             paragraph.innerText = getTitle(currentIndex);
-            BigTitle.innerText = getTitle((currentIndex -6 + imgContents.length) % imgContents.length);
-            Description.innerText = getDesc((currentIndex -6 + imgContents.length) % imgContents.length)
+            BigTitle.innerText = getTitle((currentIndex - 6 + imgContents.length) % imgContents.length);
+            Description.innerText = getDesc((currentIndex - 6 + imgContents.length) % imgContents.length)
         }
     });
 }
@@ -55,7 +55,7 @@ function getImagePath(index) {
 }
 
 function getTitle(indeks) {
-    const titleText = ["Bubur Pedas", "Sate Lilit", "Soto Banjar", "Empek Empek","Gudeg","Mie Aceh","Seblak","Rawon"];
+    const titleText = ["Bubur Pedas", "Sate Lilit", "Soto Banjar", "Empek Empek", "Gudeg", "Mie Aceh", "Seblak", "Rawon"];
     return titleText[indeks];
 }
 
@@ -88,7 +88,7 @@ const paragraph = document.querySelector(".image-cont-first span");
 
 
 
-all.addEventListener("click", function() {
+all.addEventListener("click", function () {
 
     imgContainer.style.overflow = "visible";
     imgContainer.classList.add("active1");
@@ -107,7 +107,7 @@ all.addEventListener("click", function() {
         });
     });
 
-    document.querySelector(".button-explore-slider").style.display = "none"; 
+    document.querySelector(".button-explore-slider").style.display = "none";
 
     all.style.display = "none";
     less.style.display = "block";
@@ -116,7 +116,7 @@ all.addEventListener("click", function() {
 });
 
 
-less.addEventListener("click", function() {
+less.addEventListener("click", function () {
     const imgContents = imgContainer.querySelectorAll(".image-cont-first");
 
     if (isExpanded) {
@@ -127,12 +127,160 @@ less.addEventListener("click", function() {
             imgContent.style.opacity = imgContent.classList.contains("actives") ? 1 : 0.5;
         });
 
-        document.querySelector(".button-explore-slider").style.display = "flex"; 
+        document.querySelector(".button-explore-slider").style.display = "flex";
 
         all.style.display = "block";
         less.style.display = "none";
 
         isExpanded = false;
+    }
+});
+
+
+
+
+
+
+
+
+// Arti & Music
+function changeImage2(step) {
+    const imgContainer = document.querySelector(".image-slider-container-first-2");
+    const imgContents = imgContainer.querySelectorAll(".image-cont-first-2");
+    const imgBig = document.querySelector("#FirstImgExplore-2");
+    const BigTitle = document.querySelector("#TitleExploreFirst-2");
+    const Description = document.querySelector("#DescriptionExploreFirst-2");
+
+    imgContents.forEach(imgContent => {
+        const imgSmall = imgContent.querySelector(".img-dlm-2 img");
+        const span = imgContent.querySelector(".p-2");
+        const paragraph = imgContent.querySelector(".span-2");
+
+        let currentIndex = parseInt(span.innerText) - 1;
+        currentIndex = (currentIndex + step + imgContents.length) % imgContents.length;
+
+
+
+        span.innerText = currentIndex + 1;
+        imgSmall.src = getImagePath2(currentIndex);
+
+
+        let nextIndex = (currentIndex + 2) % imgContents.length;
+        let prevIndex = (currentIndex - 6 + imgContents.length) % imgContents.length;
+
+        if (step > 0) {
+            imgBig.src = getImagePath2(nextIndex);
+            paragraph.innerText = getTitle2(currentIndex);
+            BigTitle.innerText = getTitle2((currentIndex + step + imgContents.length + 1) % imgContents.length);
+            Description.innerText = getDesc2((currentIndex + step + imgContents.length + 1) % imgContents.length);
+        } else if (step < 0) {
+            imgBig.src = getImagePath2(prevIndex);
+            paragraph.innerText = getTitle2(currentIndex);
+            BigTitle.innerText = getTitle2((currentIndex - 6 + imgContents.length) % imgContents.length);
+            Description.innerText = getDesc2((currentIndex - 6 + imgContents.length) % imgContents.length)
+        }
+    });
+}
+
+function getImagePath2(index) {
+    const imagePath2 = [
+        "../main/styles/assets/explore_sasando-removebg-preview.png",
+        "../main/styles/assets/explore_wayang_kulit-removebg-preview.png",
+        "../main/styles/assets/explore_tari_piring-removebg-preview.png",
+        "../main/styles/assets/explore_kain_batik-removebg-preview.png",
+        "../main/styles/assets/explore-_tari_saman-removebg-preview.png",
+        "../main/styles/assets/explore-angklung-removebg-preview.png",
+        "../main/styles/assets/explore-tari_jaipong-removebg-preview.png",
+        "../main/styles/assets/explore-tato_dayak-removebg-preview.png"
+    ];
+    return imagePath2[index];
+}
+
+function getTitle2(indeks) {
+    const titleText2 = ["Sasando", "Wayang", "Tari Piring", "Kain Batik", "Tari Saman", "Angklung", "Tari Jaipong", "Tato Dayak"];
+    return titleText2[indeks];
+}
+
+function getDesc2(indek) {
+    const deskripsi2 = [
+        "Sasando adalah salah satu alat musik tradisional dari Pulau Rote, Nusa Tenggara Timur (NTT). Sasando ini merupakan alat musik berdawai tanpa mempunyai cord dan dimainkan dengan cara dipetik dengan menggunakan jari.",
+        "Wayang kulit adalah bentuk seni tradisional Indonesia yang berasal dari budaya Jawa. Kesenian ini menggunakan karakter mitologi yang umumnya terbuat dari lembaran kulit binatang, seperti kerbau. Wayang kulit bukan hanya sekadar pertunjukan, tetapi juga memiliki nilai adiluhung dan merupakan bagian integral dari masyarakat Jawa.",
+        "Tari piring adalah tarian tradisional Minangkabau yang menampilkan atraksi menggunakan piring. Para penari mengayunkan piring di tangan mengikuti gerakan-gerakan cepat yang teratur, tanpa satu pun piring terlepas dari tangan.",
+        "Kain batik adalah kain bergambar khas Indonesia yang dihasilkan melalui seni dan teknologi perpaduan. Proses pembuatan batik melibatkan penggunaan lilin malam dan canting.",
+        "Tari Saman adalah sebuah bentuk tarian tradisional yang berasal dari suku Gayo, Aceh, Indonesia. Tarian ini memiliki ciri khas yang unik dan penuh semangat, serta merupakan salah satu tari tradisional paling terkenal di Indonesia.",
+        "Angklung adalah alat musik tradisional Indonesia yang berasal dari Jawa Barat, terdiri dari dua sampai empat tabung bambu yang digantung dalam rangka bambu.Dengan menggoyangkannya akan menghasilkan bunyi yang khas",
+        "Tari Jaipong adalah salah satu tarian tradisional yang berasal dari Jawa Barat, Indonesia.Tari Jaipong memiliki ciri khas gerakan yang dinamis, energetik, dan sensual.",
+        "Tato Dayak adalah seni ukir atau rajah pada tubuh yang memiliki makna dan nilai budaya mendalam bagi suku Dayak, terutama suku Dayak Iban di Kalimantan.Motif-motif tato Dayak memiliki beragam makna, mulai dari simbol spiritual, keseimbangan alam, hingga status sosial."
+    ];
+    return deskripsi2[indek];
+}
+
+
+
+let isExpanded2 = false;
+const all2 = document.querySelector(".showall-2");
+const less2 = document.querySelector(".showless-2");
+
+const imgContainer2 = document.querySelector(".image-slider-container-first-2");
+const imgContents2 = imgContainer2.querySelectorAll(".image-cont-first-2");
+const imgBig2 = document.querySelector("#FirstImgExplore-2");
+const BigTitle2 = document.querySelector("#TitleExploreFirst-2");
+const Description2 = document.querySelector("#DescriptionExploreFirst-2");
+const paragraph2 = document.querySelector(".image-cont-first-2 span");
+
+const motif2 = document.querySelector(".motif-2");
+const motif3 = document.querySelector(".motif-3");
+
+all2.addEventListener("click", function () {
+
+
+    imgContainer2.style.overflow = "visible";
+    imgContainer2.classList.add("active2");
+    less2.style.marginTop = "20em";
+
+    imgContents2.forEach(imgContent2 => {
+        imgContent2.style.opacity = 1;
+        imgContent2.style.cursor = "pointer";
+
+        imgContent2.addEventListener("click", function () {
+            const currentIndex2 = parseInt(imgContent2.querySelector(".p-2").innerText) - 1;
+            imgBig2.src = getImagePath2(currentIndex2);
+            paragraph2.innerText = getTitle2(currentIndex2);
+            BigTitle2.innerText = getTitle2(currentIndex2);
+            Description2.innerHTML = getDesc2(currentIndex2);
+        });
+    });
+
+    document.querySelector(".button-explore-slider-2").style.display = "none";
+
+    all2.style.display = "none";
+    less2.style.display = "block";
+    motif2.style.display = "none";
+    motif3.style.display = "none";
+
+    isExpanded2 = true;
+});
+
+
+less2.addEventListener("click", function () {
+    const imgContents2 = imgContainer2.querySelectorAll(".image-cont-first-2");
+
+    if (isExpanded2) {
+        imgContainer2.style.overflow = "hidden";
+        imgContainer2.classList.remove("active2");
+
+        imgContents2.forEach(imgContent2 => {
+            imgContent2.style.opacity = imgContent2.classList.contains("actives-2") ? 1 : 0.5;
+        });
+
+        document.querySelector(".button-explore-slider-2").style.display = "flex";
+
+        all2.style.display = "block";
+        less2.style.display = "none";
+        motif2.style.display = "block";
+        motif3.style.display = "block";
+
+        isExpanded2 = false;
     }
 });
 

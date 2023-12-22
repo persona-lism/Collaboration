@@ -10,6 +10,8 @@ body {
     /* overflow-x: hidden; */
 }
 
+
+/* Cuisine */
 .container-explore .main-content {
     background-image: linear-gradient(to left top , #1a5a91 60% , #101746 95%);
     height: 850px;
@@ -60,12 +62,12 @@ body {
 
 .container-explore .main-content .first-content-explore .first-explore-content-top .first-title-explore {
     height: 300px;
-    flex: 0 0 360px;
-    margin-left: -3rem;
+    flex: 0 0 340px;
+    margin-left: -2rem;
 }
 
 .container-explore .main-content .first-content-explore .first-explore-content-top .first-title-explore h1 {
-    font-size: 5.5em;
+    font-size: 4.5em;
     color: #ffd700;
     text-transform: uppercase;
 }
@@ -278,6 +280,39 @@ body {
     flex-direction: column;
     position: relative;
     top: 10rem;
+    /* background-color: green; */
+}
+.container-explore .main-content-2 .first-content-explore-2 .motif {
+    position: absolute;
+    z-index: 0;
+    top: -18rem;
+    right: -10rem;
+}
+
+.container-explore .main-content-2 .first-content-explore-2 .motif > img {
+    height: 400px;
+}
+
+.container-explore .main-content-2 .first-content-explore-2 .motif-2 {
+    position: absolute;
+    z-index: 0;
+    bottom: -35rem;
+    left: -6rem;
+}
+
+.container-explore .main-content-2 .first-content-explore-2 .motif-2 > img {
+    height: 400px;
+}
+
+.container-explore .main-content-2 .first-content-explore-2 .motif-3 {
+    position: absolute;
+    z-index: 0;
+    bottom: -31rem;
+    left: 2rem;
+}
+
+.container-explore .main-content-2 .first-content-explore-2 .motif-3 > img {
+    height: 150px;
 }
 
 .container-explore .main-content-2 .first-content-explore-2 .circle-2 {
@@ -319,13 +354,19 @@ body {
     height: 300px;
     flex: 0 0 360px;
     margin-right: -2rem;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     padding: 0 12px;
+    /* position: relative; */
 }
 
 .container-explore .main-content-2 .first-content-explore-2 .first-explore-content-top-2 .first-title-explore-2 > h1 {
-    font-size: 4.5em;
+    font-size: 3.5em;
     color: #ffd700;
     text-transform: uppercase;
+    display: flex;
+    flex-wrap: wrap;
+    /* position: absolute; */
 }
 
 .container-explore .main-content-2 .first-content-explore-2 .first-explore-content-top-2 .first-title-explore-2 > a {
@@ -334,6 +375,7 @@ body {
     margin-left: 10px;
     letter-spacing: 1px;
     cursor: pointer;
+    /* position: absolute; */
 }
 
 .container-explore .main-content-2 .first-content-explore-2 .first-explore-content-top-2 .first-title-explore-2 a > span {
@@ -499,7 +541,262 @@ body {
 
 
 /* add classlist */
-.container-explore .main-content-2 .first-content-explore-2 .first-explore-content-bottom-2 .active1-1 { 
+.container-explore .main-content-2 .first-content-explore-2 .first-explore-content-bottom-2 .active2 { 
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    height: 350px;
+    transform: translate(-50%,-50%);
+    position: relative;
+    left: 50%;
+    flex-wrap: wrap;
+    margin-top: 12em;
+} 
+/* ^^ pengganti image-slider-container-first */
+
+.container-explore .main-content-2 .first-content-explore-2 .first-explore-content-bottom-2 .image-slider-container-first-2 .actives-2 {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+/* Games */
+.container-explore .main-content-3 {
+    background-image: linear-gradient(to left top , #286030 60% , #182c1c 95%);
+    height: 850px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .circle-3 {
+    height: 1000px;
+    width: 1000px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    top: -40rem;
+    left: -28rem;
+    border: 50px solid white;
+    opacity: 0.8;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-top-3 {
+    display: flex;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-top-3 .first-photo-explore {
+    margin-top: -6rem;
+    margin-left: 3rem;
+    position: relative;
+    z-index: 2;
+    z-index: 0;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-top-3 .first-photo-explore img {
+    height: 500px;
+    width: 520px;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    background-position: center;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-top-3 .first-title-explore-3 {
+    height: 300px;
+    flex: 0 0 340px;
+    margin-left: -2rem;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-top-3 .first-title-explore-3 > h1 {
+    font-size: 4.5em;
+    color: #ffd700;
+    text-transform: uppercase;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-top-3 .first-title-explore-3 > a {
+    color: white;
+    /* text-decoration: none; */
+    margin-left: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-top-3 .first-title-explore-3 > a > span {
+    margin-right: 7px;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-top-3 .first-description-explore-3 {
+    background-color: #17457a;
+    flex: 0 0 350px;
+    height: 350px;
+    padding: 36px;
+    border-radius: 15%;
+    /* margin-right: 15px; */
+    margin-left: 10px;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-top-3 .first-description-explore-3 > h4 {
+    color: #ffd700;
+    font-size: 1.5em;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-top-3 .first-description-explore-3 > p {
+    margin-top: 25px;
+}
+
+
+
+
+
+/* bottom */
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 {
+    display: flex;
+    position: relative;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 > .side-text-3 {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 6rem;
+    left: -8rem;
+    z-index: 2;
+    font-size: 2.5em;
+    letter-spacing: 3px;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 > .side-text-3 > span {
+    margin-left: 5px;
+    font-size: 1.8em;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 > .showall-3 {
+    padding: 8px 24px;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 2.5rem;
+    transform: translate(-50%,100%);
+    cursor: pointer;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 > .showless-3 {
+    padding: 8px 24px;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 2.5rem;
+    transform: translate(-50%,100%);
+    display: none;
+    cursor: pointer;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 .image-slider-container-first-3 {
+    display: flex;
+    align-items: center;
+    padding: 4px;
+    /* background-color: green; */
+    width: 600px;
+    height: 170px;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    left: 50%;
+    overflow: hidden;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 .image-slider-container-first-3 .image-cont-first-3 {
+    height: 120px;
+    flex: 0 0 100px;
+    margin:0 47px;
+    position: relative;
+    opacity: 0.5;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 .image-slider-container-first-3 .image-cont-first-3.actives-3 {
+    opacity: 1;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 .image-slider-container-first-3 .image-cont-first-3 > span  {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 .image-slider-container-first-3 .image-cont-first-3  > p {
+    color: #fff;
+    display: none;
+}
+
+
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 .image-slider-container-first-3 .image-cont-first-3 .img-dlm-3 {
+    height: 100px;
+    flex: 0 0 100px;
+    border-radius: 50%;
+    /* background-color: red; */
+    overflow: hidden;
+    position: relative;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 .image-slider-container-first-3 .image-cont-first-3 .img-dlm-3 img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-size: center; */
+}
+
+
+/* Button */
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 .button-explore-slider-3 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-90%);
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+}
+
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 .button-explore-slider-3 > button {
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border: none;
+    color: #ffd700;
+    font-size: 3em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* add classlist */
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 .active3 { 
     display: flex;
     justify-content: space-around;
     width: 800px;
@@ -512,6 +809,6 @@ body {
 } 
 /* ^^ pengganti image-slider-container-first */
 
-.container-explore .main-content-2 .first-content-explore-2 .first-explore-content-bottom-2 .image-slider-container-first-2 .actives-2 {
+.container-explore .main-content-3 .first-content-explore-3 .first-explore-content-bottom-3 .image-slider-container-first-3 .actives-3 {
     opacity: 1;
 }
