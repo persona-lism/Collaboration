@@ -1,4 +1,5 @@
 const less = document.querySelector(".showless");
+const all = document.querySelector(".showall");
 const imgContainer = document.querySelector(".image-slider-container-first");
 const imgContents = imgContainer.querySelectorAll(".image-cont-first");
 const imgBig = document.querySelector("#FirstImgExplore");
@@ -8,24 +9,21 @@ const paragraph = document.querySelector(".image-cont-first span");
 
 function myFunction(x) {
   if (x.matches) {
-  
+    less.addEventListener("click", function () {
+        imgContents.forEach((imgContent) => {
+          imgContent.style.opacity = 0;
+        });
+      });
     
     all.addEventListener("click",function() {
         less.style.marginTop = "32rem";
     })
-  } else {
-    less.addEventListener("click", function () {
-      imgContents.forEach((imgContent) => {
-        imgContent.style.opacity = 0;
-      });
-    });
-  }
+  } 
 }
 
-let xm = window.matchMedia("(max-width: 568px)");
-myFunction(xm);
+let x = window.matchMedia("(max-width: 568px)");
+myFunction(x);
 
-xm.addEventListener("change", function (event) {
-  myFunction(event.currentTarget);
+x.addEventListener("change", function () {
+  myFunction(x);
 });
-

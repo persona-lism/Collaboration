@@ -28,6 +28,7 @@
 .container > .second-content {
     padding-bottom: 36rem;
     background: linear-gradient(to bottom, transparent 55%, #000);
+    /* display: flex; */
 }
 
 .container > .second-content > .second-content-image {
@@ -265,8 +266,9 @@
     display: flex;
     gap: 4rem 0;
     overflow-x: hidden;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
+    /* background-color: red; */
 }
 
 .third-content-wrappers > .third-content-texts {
@@ -478,12 +480,12 @@
 .button-slider {
     display: flex;
     justify-content: space-between;
-    width: 630px;
+    width: 650px;
     position: absolute;
     z-index: 1;
     transform: translateY(-50%);
     top: 50%;
-    right: 10%;
+    right: 2rem;
 }
 
 .button-slider > button {
@@ -502,10 +504,11 @@
 
 .items {
     position: relative;
-    height: 350px;
+    height: 300px;
     width: 800px;
     margin: 0 auto;
     display: flex;
+    right: -4rem;
 }
 
 .items .item {
@@ -517,12 +520,21 @@
     transition: all 800ms ease-in-out;
     z-index: -1;
     opacity: 0;
-    background-color: red;
-    max-height: 350px;
-    max-width: 250px;
+    /* background-color: red; */
+    max-height: 300px;
+    max-width: 220px;
     width: 100%;
     height: 100%;
+    /* display: flex;
+    align-items: end;
+    justify-content: end; */
 }
+
+/* .items .item span {
+    z-index: 5;
+    position: absolute;
+    color: #fff;
+} */
 
 @keyframes item-highlighted {
     0% {
@@ -556,13 +568,13 @@
 
 .item.prev {
     z-index: 2;
-    opacity: 0.5;
+    opacity: 1;
     transform: translate(calc(-125% - 80px), -50%); 
 }
 
 .item.next {
     z-index: 2;
-    opacity: 0.5;
+    opacity: 1;
     transform: translate(calc(25% + 80px), -50%); 
 }
 
@@ -571,16 +583,18 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 480px;
+    width: 580px;
     z-index: 100;
+    /* background-color: red; */
+    left: 12rem;
 }
 
 .button-container .button {
     color: #fff;
-    font-size: 32px;
+    font-size: 42px;
     cursor: pointer;
     position: relative;
-    opacity: 0.75;
+    /* opacity: 0.75; */
     transition: all 300ms ease-in-out;
 }
 
@@ -590,9 +604,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
-    background-color: rgba(0, 0, 0, 1);
+    width: 60px;
+    height: 60px;
+    /* background-color: rgba(0, 0, 0, 1); */
+    background: transparent;
+    border: 5px solid white;
     border-radius: 50%;
     z-index: -99;
 }
